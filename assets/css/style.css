@@ -10669,7 +10669,7 @@ span.select2-selection.select2-selection--single:focus {
     font-size: 44px;
     font-weight: 700;
     line-height: 1;
-    color: var(--theme-color);
+    color: var(--theme-color2);
     margin-bottom: 12px;
 }
 .choose-box_text {
