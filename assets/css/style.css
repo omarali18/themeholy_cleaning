@@ -10969,7 +10969,9 @@ span.select2-selection.select2-selection--single:focus {
 .service-card_content:after {
     height: 0;
     z-index: -1;
-    background-color: var(--theme-color);
+    /* background-color: var(--theme-color); */
+    /* background-color: var(--theme-color2); */
+    background-image: linear-gradient(to right, #3CBBC9 , #3C79C9);
 }
 .service-card_text {
     max-width: 310px;
@@ -10991,14 +10993,20 @@ span.select2-selection.select2-selection--single:focus {
 .service-card .themeholy-btn:before,
 .service-card .themeholy-btn:after {
     background-color: var(--theme-color2);
+    background-color: var(--theme-color2);
 }
 .service-card:hover .box-title {
     color: var(--white-color);
 }
-.service-card:hover .themeholy-btn {
-    background-color: var(--white-color);
-    color: var(--theme-color);
+.service-card:hover .service-card_content .themeholy-btn {
+    background-color: var(--white-color)!important;
+    /* color: var(--theme-color2); */
+    color: var(--white-color);
 }
+/* .service-card:hover .newButtonhere {
+    background-color: var(--white-color)!important;
+    color: var(--theme-color2);
+} */
 .service-card:hover .themeholy-btn:hover {
     color: var(--white-color);
 }
