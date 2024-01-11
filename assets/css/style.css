@@ -398,8 +398,8 @@ select,
 textarea,
 input {
     height: 56px;
-    padding: 0 25px 0 25px;
-    padding-right: 45px;
+    padding: 0 10px 0 10px;
+    padding-right: 10px;
     border: 1px solid transparent;
     color: var(--body-color);
     background-color: var(--smoke-color);
@@ -530,6 +530,8 @@ textarea.style2 {
 .form-group.has-label > i {
     top: 50px;
 }
+
+
 [class*="col-"].form-group > i {
     right: calc((var(--bs-gutter-x) / 2) + 25px);
 }
@@ -700,6 +702,12 @@ textarea.is-invalid {
     padding-right: calc(var(--bs-gutter-x) / 2);
     padding-left: calc(var(--bs-gutter-x) / 2);
     margin-top: var(--bs-gutter-y);
+}
+.form-group2{
+    width: 100%;
+}
+.form-btn2{
+    width: 50%;
 }
 .slick-track {
     min-width: 100%;
@@ -10524,7 +10532,8 @@ span.select2-selection.select2-selection--single:focus {
     position: absolute;
     inset: 0;
     background-color: transparent;
-    border: 1px solid var(--border-color);
+    /* border: 1px solid var(--border-color); */
+    border: 1px solid #242057;
     border-radius: 50%;
     -webkit-animation: rippleShape var(--duration) linear infinite;
     animation: rippleShape var(--duration) linear infinite;
@@ -11677,7 +11686,7 @@ span.select2-selection.select2-selection--single:focus {
     opacity: 1;
 }
 .process-sec1 {
-    padding-bottom: 280px;
+    /* padding-bottom: 280px; */
 }
 .project-sec1 {
     margin-top: -280px;
