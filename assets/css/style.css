@@ -708,7 +708,7 @@ textarea.is-invalid {
 }
 .form-btn2{
     width: 50%;
-}
+}.main-menu ul li.menu-item-has-children > a:after
 .slick-track {
     min-width: 100%;
 }
@@ -3623,6 +3623,9 @@ ol.wp-block-rss {
     .widget {
         --widget-padding-y: 30px;
         --widget-padding-x: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .widget_title {
         font-size: 22px;
@@ -3969,7 +3972,7 @@ ol.wp-block-rss {
     display: inline-block;
     position: relative;
 }
-.main-menu ul li.menu-item-has-children > a:after {
+/* .main-menu ul li.menu-item-has-children > a:after {
     content: "\2b";
     display: inline-block;
     position: relative;
@@ -3981,7 +3984,7 @@ ol.wp-block-rss {
     color: var(--theme-color);
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-}
+} */
 .main-menu ul li.menu-item-has-children > a:hover:after {
     content: "\f068";
     -webkit-transform: rotate(180deg);
