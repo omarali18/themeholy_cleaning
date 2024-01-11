@@ -9973,7 +9973,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 .counter-card_number {
     font-size: 44px;
-    color: var(--theme-color);
+    color: var(--theme-color2);
     font-weight: 600;
     margin-bottom: 0px;
     margin-top: -0.28em;
@@ -11979,7 +11979,7 @@ span.select2-selection.select2-selection--single:focus {
     border-right: 1px solid var(--border-color);
 }
 .process-card-wrap:not(:last-child):after {
-    content: url("data:image/svg+xml,%3Csvg width='98' height='16' viewBox='0 0 98 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M97.7071 8.70711C98.0976 8.31658 98.0976 7.68342 97.7071 7.29289L91.3431 0.928932C90.9526 0.538408 90.3195 0.538408 89.9289 0.928932C89.5384 1.31946 89.5384 1.95262 89.9289 2.34315L95.5858 8L89.9289 13.6569C89.5384 14.0474 89.5384 14.6805 89.9289 15.0711C90.3195 15.4616 90.9526 15.4616 91.3431 15.0711L97.7071 8.70711ZM0 9H97V7H0V9Z' fill='%23E83A15'/%3E%3C/svg%3E");
+    content: url("data:image/svg+xml,%3Csvg width='98' height='16' viewBox='0 0 98 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M97.7071 8.70711C98.0976 8.31658 98.0976 7.68342 97.7071 7.29289L91.3431 0.928932C90.9526 0.538408 90.3195 0.538408 89.9289 0.928932C89.5384 1.31946 89.5384 1.95262 89.9289 2.34315L95.5858 8L89.9289 13.6569C89.5384 14.0474 89.5384 14.6805 89.9289 15.0711C90.3195 15.4616 90.9526 15.4616 91.3431 15.0711L97.7071 8.70711ZM0 9H97V7H0V9Z' fill='%23242057'/%3E%3C/svg%3E");
     height: 50px;
     line-height: 50px;
     width: 130px;
@@ -11992,7 +11992,7 @@ span.select2-selection.select2-selection--single:focus {
     border-bottom: 1px solid var(--border-color);
 }
 .process-card_img {
-    border: 2px solid var(--theme-color);
+    border: 2px solid var(--theme-color2);
     border-radius: 50%;
     padding: 15px;
     max-width: 230px;
@@ -12028,7 +12028,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 .process-card_icon:before {
     inset: -13px;
-    background-color: var(--theme-color);
+    background-color: var(--theme-color2);
     opacity: 0.2;
 }
 .process-card_text {
