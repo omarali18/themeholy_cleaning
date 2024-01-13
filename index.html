@@ -422,10 +422,58 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-auto d-none d-xxl-block">
-                      <a href="contact.html" class="themeholy-btn style4"
-                        >English</a
-                      >
+                    <div class="col-auto d-none d-xxl-block position-relative">
+                      <style>
+                        .country-list {
+                          position: absolute;
+                          list-style: none;
+                          padding: 0;
+                          width: 166px;
+                          max-height: 200px;
+                          overflow-y: auto;
+                          background-color: #fff;
+                          border-radius: 5px;
+                          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                          transition: max-height 0.5s ease, opacity 0.5s ease; /* Added transition */
+                        }
+
+                        .country-list li {
+                          padding: 10px;
+                          border-bottom: 1px solid #ddd;
+                          transition: background-color 0.3s ease;
+                        }
+
+                        .country-list li:last-child {
+                          border-bottom: none;
+                        }
+
+                        .country-list li:hover {
+                          background-color: #f0f0f0;
+                        }
+                        .activeLang{
+                          background-color: rgb(241, 241, 241);
+                        }
+                      </style>
+                      <button href="" class="themeholy-btn style4" id="showCountriesBtn">
+                        <span id="langBtnName">English</span> <i class="far fa-language fa-lg text-white ms-2"></i> 
+                      </button>
+                      <ul class="country-list d-none" id="countriesList">
+                        <li  class="activeLang">ENGLISH</li>
+                        <li  >SUOMI</li>
+                        <li  >SVENSKA</li>
+                    </ul>
+                    <script>
+                      const showCountriesBtn = document.getElementById('showCountriesBtn');
+                      const countriesList = document.getElementById('countriesList');
+
+                      showCountriesBtn.addEventListener('click', function(e) {
+                        // e.preventDefault()
+                        console.log("ssssssss");
+                        countriesList.classList.toggle('d-none');
+                      });
+
+                    
+                    </script>
                     </div>
                   </div>
                 </div>
@@ -613,7 +661,7 @@
         <div class="themeholy-hero-slide">
           <div
             class="themeholy-hero-bg"
-            data-bg-src="assets/img/hero/hero_bg_1_1.png"
+            data-bg-src="assets/img/hero/hero_bg_1_2.jpg"
           >
             <img src="assets/img/hero/hero_overlay_1.png" alt="Overlay" />
           </div>
@@ -665,7 +713,7 @@
         <div class="themeholy-hero-slide">
           <div
             class="themeholy-hero-bg"
-            data-bg-src="assets/img/hero/hero_bg_1_1.png"
+            data-bg-src="assets/img/hero/hero_bg_1_3.jpg"
           >
             <img src="assets/img/hero/hero_overlay_1.png" alt="Overlay" />
           </div>
@@ -684,14 +732,14 @@
                 data-ani="slideinleft"
                 data-ani-delay="0.3s"
               >
-                Plumbing Service is
+              Expert Cleaning,
               </h1>
               <h1
                 class="hero-title"
                 data-ani="slideinleft"
                 data-ani-delay="0.5s"
               >
-                Our Main Motto
+              Elevate Environment!
               </h1>
               <p class="hero-text" data-ani="slideinleft" data-ani-delay="0.7s">
                 We pride ourselves on delivering more than just a clean space;
@@ -1986,8 +2034,8 @@
             <div class="widget footer-widget">
               <div class="about-logo">
                 <a href="home-plumbing-service.html"
-                  ><img src="assets/img/logo-small.svg" alt="Plumer"
-                /></a>
+                  ><img src="assets/img/logo-small.svg" alt="Plumer" style="width: 150px;height: 54px;"/>
+              </a>
               </div>
               <div class="themeholy-widget-schedule">
                 <p class="text">

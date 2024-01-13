@@ -447,3 +447,36 @@
            );
        });
 })(jQuery);
+
+
+
+// document.addEventListener('click', function(event) {
+//     var countriesList = document.getElementById('countriesList');
+//     var clickedElement = event.target;
+//     console.log("clickEvent ==", clickedElement, countriesList);
+//     countriesList.classList.remove('visible');
+//     // if (!dropdown.contains(clickedElement)) {
+//     // }
+//   });
+
+const langBtnName = document.querySelector("#langBtnName");
+const linkParent = document.querySelector("#countriesList");
+const langLink = document.querySelectorAll('#countriesList li');
+console.log('langLink', langLink);
+
+// const activeLangLink = (tag) => {
+//     console.log('tag:', tag.innerText);
+//     // linkParent.querySelector(".activeLang").classList.remove("activeLang");
+//     // tag.classList.add("activeLang");
+//   };
+
+langLink.forEach(link =>{
+    console.log(link);
+    link.addEventListener('click', () =>{
+        console.log('ddddd', link.innerText);
+        linkParent.querySelector(".activeLang").classList.remove("activeLang");
+        link.classList.add("activeLang");
+        langBtnName.textContent = link.innerText;
+        countriesList.classList.add('d-none');
+    })
+})
