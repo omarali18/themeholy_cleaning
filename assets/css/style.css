@@ -1485,7 +1485,7 @@ textarea.is-invalid {
     text-align: center;
     line-height: 50px;
     font-size: 20px;
-    color: var(--theme-color);
+    color: var(--theme-color2);
     left: 0;
     top: 0;
     height: 50px;
@@ -1493,7 +1493,7 @@ textarea.is-invalid {
     cursor: pointer;
     display: block;
     z-index: 1;
-    border: 2px solid var(--theme-color);
+    border: 2px solid var(--theme-color2);
     box-shadow: none;
     border-radius: 50%;
 }
@@ -1506,7 +1506,8 @@ textarea.is-invalid {
     fill: none;
 }
 .scroll-top .progress-circle path {
-    stroke: var(--theme-color);
+    /* stroke: var(--theme-color); */
+    stroke: var(--theme-color2);
     stroke-width: 20px;
     box-sizing: border-box;
     -webkit-transition: all 400ms linear;
@@ -10332,7 +10333,7 @@ span.select2-selection.select2-selection--single:focus {
     gap: 10px;
 }
 .checklist li > i {
-    color: var(--theme-color);
+    color: #242057;
 }
 .checklist li:not(:last-child) {
     margin-bottom: 10px;

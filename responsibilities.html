@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Cleaning - Contact Us</title>
+    <title>Cleaning - Responsibilities</title>
     <meta name="author" content="Plumer" />
     <meta
       name="description"
@@ -102,16 +102,17 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    
-
     <div class="themeholy-menu-wrapper">
       <div class="themeholy-menu-area text-center">
         <button class="themeholy-menu-toggle">
           <i class="fal fa-times"></i>
         </button>
         <div class="mobile-logo">
-          <a href="index.html"
-            ><img src="assets/img/new_logo.svg" alt="Plumer" style="width: 200px; height: 70px"
+          <a href="home-plumbing-service.html"
+            ><img
+              src="assets/img/new_logo.svg"
+              alt="Plumer"
+              style="width: 200px; height: 70px"
           /></a>
         </div>
         <div class="themeholy-mobile-menu">
@@ -120,12 +121,12 @@
               <a href="index.html">Home</a>
             </li>
             <li class="menu-item-has-children">
-               <a href="service-details.html#">Services</a>
-               <ul class="sub-menu">
-                  <li><a href="service-details.html#homeWash">Home Wash</a></li>
-                  <li><a href="service-details.html#BasicCleaning">Basic Cleaning</a></li>
-                  <li><a href="service-details.html#GlassCleaning">Glass Cleaning</a></li>
-                </ul>
+              <a href="service-details.html#">Services</a>
+              <ul class="sub-menu">
+                <li><a href="#homeWash">Home Wash</a></li>
+                <li><a href="#BasicCleaning">Basic Cleaning</a></li>
+                <li><a href="#GlassCleaning">Glass Cleaning</a></li>
+              </ul>
             </li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="responsibilities.html">Responsibilities</a></li>
@@ -142,7 +143,7 @@
           >
             <div class="col-auto d-none d-lg-block">
               <p class="header-notice">
-                Welcome to <span class="text-theme">Dust-off</span> Cleaning
+                Welcome to <span class="text-theme">Dust-off </span>Cleaning
                 Services.
               </p>
             </div>
@@ -164,8 +165,7 @@
                     >
                   </li>
                   <li>
-                    <i class="fal fa-clock"></i>&nbsp; we are available 24/7 at
-                    your service.
+                    <i class="fal fa-clock"></i>Work Time: Mon - Fri 09AM - 6PM
                   </li>
                   <li>
                     <div class="social-links">
@@ -211,18 +211,26 @@
                   <ul>
                     <li class="menu-item-has-children">
                       <a href="index.html">Home</a>
-                     
                     </li>
                     <li class="menu-item-has-children">
-                      <a href="service-details.html">Services</a>
+                      <a href="service-details.html#">Services</a>
                       <ul class="sub-menu">
-                        <li><a href="service-details.html">Home Wash</a></li>
-                        <li><a href="service-details.html">Basic Cleaning</a></li>
-                        <li><a href="service-details.html">Glass Cleaning</a></li>
+                        <li><a href="#homeWash">Home Wash</a></li>
+                        <li><a href="#BasicCleaning">Basic Cleaning</a></li>
+                        <li><a href="#GlassCleaning">Glass Cleaning</a></li>
                       </ul>
+
+                      <!-- <ul class="sub-menu d-none">
+                          <li><a href="service.html">Services</a></li>
+                          <li>
+                             <a href="service-details.html">Services Details</a>
+                           </li>
+                        </ul> -->
                     </li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="responsibilities.html">Responsibilities</a></li>
+                    <li>
+                      <a href="responsibilities.html">Responsibilities</a>
+                    </li>
                     <li><a href="contact.html">Contact</a></li>
                   </ul>
                 </nav>
@@ -261,30 +269,35 @@
                   .country-list li:hover {
                     background-color: #f0f0f0;
                   }
-                  .activeLang{
+                  .activeLang {
                     background-color: rgb(241, 241, 241);
                   }
                 </style>
-                <button href="" class="themeholy-btn style4" id="showCountriesBtn">
-                  <span id="langBtnName">English</span> <i class="far fa-language fa-lg text-white ms-2"></i> 
+                <button
+                  href=""
+                  class="themeholy-btn style4"
+                  id="showCountriesBtn"
+                >
+                  <span id="langBtnName">English</span>
+                  <i class="far fa-language fa-lg text-white ms-2"></i>
                 </button>
                 <ul class="country-list d-none" id="countriesList">
-                  <li  class="activeLang">ENGLISH</li>
-                  <li  >SUOMI</li>
-                  <li  >SVENSKA</li>
-              </ul>
-              <script>
-                const showCountriesBtn = document.getElementById('showCountriesBtn');
-                const countriesList = document.getElementById('countriesList');
+                  <li class="activeLang">ENGLISH</li>
+                  <li>SUOMI</li>
+                  <li>SVENSKA</li>
+                </ul>
+                <script>
+                  const showCountriesBtn =
+                    document.getElementById("showCountriesBtn");
+                  const countriesList =
+                    document.getElementById("countriesList");
 
-                showCountriesBtn.addEventListener('click', function(e) {
-                  // e.preventDefault()
-                  console.log("ssssssss");
-                  countriesList.classList.toggle('d-none');
-                });
-
-              
-              </script>
+                  showCountriesBtn.addEventListener("click", function (e) {
+                    // e.preventDefault()
+                    console.log("ssssssss");
+                    countriesList.classList.toggle("d-none");
+                  });
+                </script>
               </div>
             </div>
           </div>
@@ -292,149 +305,183 @@
         </div>
       </div>
     </header>
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/contact_pg_bg_1.jpg">
+    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
       <div class="container">
         <div class="breadcumb-content">
-          <h1 class="breadcumb-title">Contact Us</h1>
+          <h1 class="breadcumb-title">Responsibilities</h1>
           <ul class="breadcumb-menu">
             <li><a href="home-plumbing-service.html">Home</a></li>
-            <li>Contact Us</li>
+            <li>Responsibilities</li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="space-top pb-5 mb-4">
+    <section class="space-top space-extra-bottom">
       <div class="container">
-        <div class="row gx-0">
-          <div class="col-lg-4">
-            <div class="contact-feature">
-              <div class="contact-feature_icon">
-                <img src="assets/img/icon/contact_2_1.svg" alt="icon" style="width: 60px;" />
+        <div class="row">
+          <div class="col-xxl-12 col-lg-12">
+            <div class="page-single" id="homeWash">
+              <div class="page-img">
+                <!-- <h2 class="h3 page-title">Home Wash</h2> -->
+                <img
+                  src="assets/img/service/service_1_1.jpg"
+                  alt="Service Image"
+                />
               </div>
-              <span class="contact-feature_subtitle">OUR OFFICE LOCATION</span>
-              <h3 class="box-title">vieraskuja 5, 02770, Espoo, Finland.</h3>
+              <div class="page-content">
+                <!-- <h2 class="h3 page-title">Basement Plumbing</h2> -->
+                <p>
+                  At our core, we are driven by a profound commitment to
+                  embodying the highest standards of responsibility in the
+                  cleaning industry within Bangladesh. Our mission transcends
+                  mere service provision; we aspire to redefine the very essence
+                  of responsible cleaning operations. We understand the impact
+                  our work has on the environment, the communities we serve, and
+                  the well-being of our employees. By integrating sustainable
+                  practices, ethical decision-making, and community engagement
+                  into our operations, we aim to set a benchmark for
+                  responsibility in our sector. Every action we take is guided
+                  by the belief that responsible cleaning is not just a service
+                  but a vital contribution to the betterment of society. Through
+                  continuous innovation, transparency, and a genuine concern for
+                  the world around us, we strive to be more than just a cleaning
+                  operator; we aspire to be a beacon of responsibility and
+                  positive change in Finland.
+                </p>
+                <p class="mb-30">
+                  We proudly collaborate with Live Foundation to empower
+                  communities through sustainable initiatives, fostering
+                  positive social impact and collective well-being. Together, we
+                  strive to create meaningful change and build a better future
+                  for all.
+                </p>
+                <h2 class="h3 page-title">People and Subcontracting</h2>
+                <p>
+                  We proudly collaborate with Live Foundation to empower
+                  communities through sustainable initiatives, fostering
+                  positive social impact and collective well-being. Together, we
+                  strive to create meaningful change and build a better future
+                  for all.
+                </p>
+                <p>
+                  Sustainability reporting involves transparently communicating
+                  our environmental, social, and governance practices,
+                  reflecting our commitment to accountability and continual
+                  improvement in sustainable initiatives. Through comprehensive
+                  reporting, we strive to showcase our dedication to responsible
+                  business practices.
+                </p>
+
+                <!-- if set 2 image then you use the opsition  -->
+                
+              </div>
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="contact-feature bg-theme">
-              <div class="contact-feature_icon">
-                <img src="assets/img/icon/contact_2_2.svg" alt="icon" style="width: 60px;"/>
+
+            <h3 class="h4 mb-20">
+              Our Commercial Cleaning is always guaranteed.
+            </h3>
+            <p class="mb-4">
+               Maintenance cleaning refers to the ongoing and regular cleaning tasks performed to 
+               preserve the cleanliness and functionality of a space. It involves routine activities such as 
+               dusting, vacuuming, mopping, and other essential chores that help prevent the 
+               accumulation of dirt and ensure a consistently clean and well-maintained environment. 
+               Maintenance cleaning is integral to sustaining hygiene and aesthetics over time, 
+               promoting a healthy and pleasant atmosphere.
+            </p>
+
+            
+            <div class="row mb-20">
+              <div class="col-md-6 mb-10">
+                <div class="checklist">
+                  <ul>
+                    <li>
+                      <i class="fas fa-badge-check"></i> We provide the most
+                      reasonable cost.
+                    </li>
+                    <li>
+                      <i class="fas fa-badge-check"></i> Finish work before
+                      Deadline.
+                    </li>
+                    <li>
+                      <i class="fas fa-badge-check"></i> The certified materials
+                      in a timely.
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <span class="contact-feature_subtitle">Have A Question?</span>
-              <h3 class="box-title telContact">
-                <a href="tel:+254621421536">+358 40 626 5614</a>
-              </h3>
+              <div class="col-md-6 mb-10">
+                <div class="checklist">
+                  <ul>
+                    <li>
+                      <i class="fas fa-badge-check"></i> Dedicated and skilled
+                      professionals
+                    </li>
+                    <li>
+                      <i class="fas fa-badge-check"></i> Offering all jobs
+                      guaranteed & neatly done
+                    </li>
+                    <li>
+                      <i class="fas fa-badge-check"></i> We provide 24/7 on time
+                      services
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="contact-feature">
-              <div class="contact-feature_icon">
-                <img src="assets/img/icon/contact_2_3.svg" alt="icon"  style="width: 60px;"/>
+            <div class="service-feature-wrap">
+              <div class="service-feature">
+                <div class="service-feature_icon">
+                  <img src="assets/img/icon/service_feature_1.svg" alt="icon" />
+                </div>
+                <div class="media-body">
+                  <h4 class="service-feature_title">Professional Expertise</h4>
+                  <p class="service-feature_text">
+                     Our experienced team brings professional expertise, 
+                     ensuring efficient and thorough cleaning services.
+                  </p>
+                </div>
               </div>
-              <div class="contact-feature_content">
-                <span class="contact-feature_subtitle">Email Us On</span>
-                <h3 class="box-title telContact">
-                  <a href="mailto:info@plumer.com">onnea20@gamil.com</a>
-                </h3>
+              <div class="service-feature">
+                <div class="service-feature_icon">
+                  <img src="assets/img/icon/service_feature_2.svg" alt="icon" />
+                </div>
+                <div class="media-body">
+                  <h4 class="service-feature_title">Customized Solutions</h4>
+                  <p class="service-feature_text">
+                     We tailor our cleaning services to meet the unique needs 
+                     of your space, providing personalized and effective solutions.
+                  </p>
+                </div>
+              </div>
+              <div class="service-feature">
+                <div class="service-feature_icon">
+                  <img src="assets/img/icon/service_feature_3.svg" alt="icon" />
+                </div>
+                <div class="media-body">
+                  <h4 class="service-feature_title">Quality Assurance</h4>
+                  <p class="service-feature_text">
+                     We uphold the highest standards of quality, guaranteeing a 
+                     consistently clean and well-maintained environment.
+                  </p>
+                </div>
+              </div>
+              <div class="service-feature">
+                <div class="service-feature_icon">
+                  <img src="assets/img/icon/service_feature_4.svg" alt="icon" />
+                </div>
+                <div class="media-body">
+                  <h4 class="service-feature_title">Client Satisfaction</h4>
+                  <p class="service-feature_text">
+                     Our commitment to client satisfaction is unwavering, and we 
+                     continuously strive to exceed expectations in every cleaning service we provide.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="space-bottom">
-      <div class="container">
-        <div
-          class="bg-smoke bg-bottom-right"
-          data-bg-src="assets/img/bg/contact_bg_2.jpg"
-          style="    background-size: cover;"
-        >
-          <div class="row">
-            <div class="col-xl-8 offset-xl-4">
-              <div class="quote-form-box bg-transparent">
-                <h4 class="form-title text-center">
-                  Contact for <span class="text-theme">Cleaning</span>
-                </h4>
-                <form
-                  action="https://themeholy.com/html/plumer/demo/mail.php"
-                  method="POST"
-                  class="contact-form ajax-contact"
-                >
-                  <div class="row">
-                    <div class="form-group col-md-12">
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="name"
-                        id="name"
-                        placeholder="Your Name"
-                      />
-                    </div>
-                    <div class="form-group col-md-6">
-                      <input
-                        type="email"
-                        class="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Email Address"
-                      />
-                    </div>
-                    <div class="form-group col-md-6">
-                      <input
-                        type="tel"
-                        class="form-control"
-                        name="number"
-                        id="number"
-                        placeholder="Phone Number"
-                      />
-                    </div>
-                    <!-- <div class="form-group col-md-6">
-                                            <select name="subject" id="subject" class="form-select">
-                                                <option value="" disabled="disabled" selected="selected" hidden>Select Subject</option>
-                                                <option value="AC Installation">AC Installation</option>
-                                                <option value="Plumbing Service">Plumbing Service</option>
-                                                <option value="AC Repairing">AC Repairing</option>
-                                                <option value="Dust Cleaning">Dust Cleaning</option>
-                                            </select>
-                                        </div> -->
-                    <div class="form-group col-12">
-                      <textarea
-                        name="message"
-                        id="message"
-                        cols="30"
-                        rows="3"
-                        class="form-control"
-                        placeholder="Your Message"
-                      ></textarea>
-                    </div>
-                    <div class="form-btn col-12">
-                      <button class="themeholy-btn btn-fw">Submit Now</button>
-                    </div>
-                  </div>
-                  <p class="form-messages mb-0 mt-3"></p>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="map-sec">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.3554606422535!2d24.661311377554465!3d60.20794897505169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df391074ebc2d%3A0xabed00f666431060!2sVieraskuja%205%2C%2002770%20Espoo%2C%20Finland!5e0!3m2!1sen!2sbd!4v1704972216095!5m2!1sen!2sbd"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-      <!-- <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.7310056272386!2d89.2286059153658!3d24.00527418490799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b97badc6151%3A0x30b048c9fb2129bc!2sAngfuztheme!5e0!3m2!1sen!2sbd!4v1651028958211!5m2!1sen!2sbd"
-                allowfullscreen=""
-                loading="lazy"
-            ></iframe> -->
-    </div>
+    </section>
     <footer class="footer-wrapper footer-layout1">
       <div class="widget-area">
         <div class="container">
@@ -443,17 +490,20 @@
               <div class="widget footer-widget">
                 <div class="about-logo">
                   <a href="home-plumbing-service.html"
-                    ><img src="assets/img/logo-small.svg" alt="Plumer" style="width: 150px;height: 54px;"/>
-                </a>
+                    ><img
+                      src="assets/img/logo-small.svg"
+                      alt="Plumer"
+                      style="width: 150px; height: 54px"
+                  /></a>
                 </div>
                 <div class="themeholy-widget-schedule">
                   <p class="text">
-                    Expert residential and small business cleaning for tailored solutions. Reliable, timely, hassle-free service for a sparkling environment
+                    Expert residential and small business cleaning for tailored
+                    solutions. Reliable, timely, hassle-free service for a
+                    sparkling environment
                   </p>
                   <h4 class="title">Working Hours:</h4>
-                  <p class="text">
-                    we are available 24/7 at your service.
-                  </p>
+                  <p class="text">we are available 24/7 at your service.</p>
                 </div>
               </div>
             </div>
@@ -465,7 +515,9 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="service-details.html">Services</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="responsibilities.html">Responsibilities</a></li>
+                    <li>
+                      <a href="responsibilities.html">Responsibilities</a>
+                    </li>
                     <li><a href="contact.html">Contact Us</a></li>
                   </ul>
                 </div>
@@ -492,8 +544,8 @@
                         >+358 40 626 5614</a
                       >
                       <!-- <a href="tel:+16326545432" class="info-box_link"
-                        >+358 40 626 5614</a
-                      > -->
+                          >+358 40 626 5614</a
+                        > -->
                     </p>
                   </div>
                   <div class="info-box">
@@ -501,9 +553,7 @@
                       <i class="fas fa-envelope"></i>
                     </div>
                     <p class="info-box_text">
-                      <a
-                        href="mailto:help24/7@plumer.com"
-                        class="info-box_link"
+                      <a href="mailto:help24/7@plumer.com" class="info-box_link"
                         >onnea20@gamil.com</a
                       >
                     </p>
@@ -511,25 +561,6 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="col-md-6 col-xl-auto">
-              <div class="widget newsletter-widget footer-widget">
-                <h3 class="widget_title">Newsletter</h3>
-                <p class="footer-text">
-                  Sign Up to get updates & news about us
-                </p>
-                <form class="newsletter-form">
-                  <input
-                    class="form-control"
-                    type="email"
-                    placeholder="Enter Email"
-                    required=""
-                  />
-                  <button type="submit" class="themeholy-btn style3">
-                    Subscribe
-                  </button>
-                </form>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
@@ -538,9 +569,9 @@
           <div class="row justify-content-between align-items-center">
             <div class="col-lg-6">
               <p class="copyright-text">
-                Copyright <i class="fal fa-copyright"></i> 2024
-                <a href="home-plumbing-service.html">Dust-of Cleaning</a>. All Rights
-                Reserved.
+                Copyright <i class="fal fa-copyright"></i> 2023
+                <a href="home-plumbing-service.html">Dust-of Cleaning</a>. All
+                Rights Reserved.
               </p>
             </div>
             <div class="col-lg-auto text-end d-none d-lg-block">
