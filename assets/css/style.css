@@ -1,7 +1,8 @@
 @use "sass:math";
 :root {
     --theme-color: #e83a15;
-    --theme-color2: #00045f;
+    --theme-color2: #242057;
+    /* --theme-color2: #00045f; */
     --title-color: #161921;
     --body-color: #646464;
     --smoke-color: #f7f7f7;
@@ -1564,7 +1565,7 @@ textarea.is-invalid {
     animation: spin 5s linear infinite;
 }
 .box-title {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.417;
     font-weight: 700;
     margin-top: -0.32em;
@@ -1902,8 +1903,9 @@ hr.title-line {
     font-size: 14px;
 }
 .bg-theme {
-    background-color: var(--theme-color) !important;
+    background-color: var(--theme-color2) !important;
 }
+
 .bg-theme2 {
     background-color: var(--theme-color2) !important;
 }
@@ -3083,6 +3085,9 @@ a.text-theme:hover,
     .widget-call .title {
         font-size: 34px;
     }
+    .box-title {
+        font-size: 17px;
+    }
 }
 .widget_info .themeholy-btn {
     width: 100%;
@@ -3646,6 +3651,9 @@ ol.wp-block-rss {
     .wp-block-tag-cloud a,
     .tagcloud a {
         padding: 10.5px 18px;
+    }
+    .box-title {
+        font-size: 22px;
     }
 }
 @media (max-width: 767px) {
@@ -5111,7 +5119,8 @@ ol.wp-block-rss {
 .breadcumb-menu li:last-child {
     padding-right: 0;
     margin-right: 0;
-    color: var(--theme-color);
+    /* color: var(--theme-color); */
+    color: #3CBBC9;
 }
 .breadcumb-menu li:last-child:after {
     display: none;
@@ -14492,4 +14501,7 @@ span.select2-selection.select2-selection--single:focus {
         -ms-flex: 100px;
         flex: 100px;
     }
+}
+.telContact a:hover{
+    color: #3CBBC9 !important;
 }
