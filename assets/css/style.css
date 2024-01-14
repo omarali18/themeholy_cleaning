@@ -3952,7 +3952,7 @@ ol.wp-block-rss {
     text-transform: capitalize;
 }
 .main-menu a:hover {
-    color: var(--theme-color);
+    color: var(--theme-color2);
 }
 .main-menu > ul > li {
     margin: 0 21px;
@@ -3985,12 +3985,12 @@ ol.wp-block-rss {
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 } */
-.main-menu ul li.menu-item-has-children > a:hover:after {
+/* .main-menu ul li.menu-item-has-children > a:hover:after {
     content: "\f068";
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
-}
+} */
 .main-menu ul li:last-child {
     margin-right: 0 !important;
 }
@@ -4063,7 +4063,7 @@ ol.wp-block-rss {
     text-transform: capitalize;
 }
 .main-menu ul.sub-menu li a:before {
-    content: "\f7d9";
+    content: "\1F9F9";
     position: absolute;
     top: 8px;
     left: 10px;
@@ -4075,7 +4075,7 @@ ol.wp-block-rss {
     display: inline-block;
     font-size: 1em;
     line-height: 1;
-    color: var(--theme-color);
+    color: var(--theme-color2);
     font-weight: 900;
     opacity: 0;
     visibility: visible;
@@ -4895,8 +4895,8 @@ ol.wp-block-rss {
 .footer-inner .footer-left {
     padding-right: var(--gap-x);
     border-right: 1px solid var(--border-color);
-    padding-top: 105px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    /* padding-bottom: 50px; */
 }
 .footer-inner .footer-top {
     border-bottom: 1px solid var(--border-color);
@@ -5489,6 +5489,10 @@ blockquote.has-very-dark-gray-color {
     .themeholy-comment-form {
         margin-right: 10px;
     }
+    .page-single{
+        padding-top: 120px;
+        padding-bottom: 20px;
+    }
 }
 .blog-single {
     position: relative;
@@ -6026,6 +6030,13 @@ ul.comment-list:has(> .themeholy-comment-item ~ .themeholy-comment-item):first-c
         left: unset;
         right: 4%;
     }
+    .EmergencyCall{
+        margin-top: 120px;
+    }
+    .page-single{
+        padding-top: 120px;
+        padding-bottom: 20px;
+    }
 }
 @media (max-width: 1400px) {
     .hero-style1 {
@@ -6034,6 +6045,9 @@ ul.comment-list:has(> .themeholy-comment-item ~ .themeholy-comment-item):first-c
     .hero-title {
         font-size: 68px;
     }
+    /* .EmergencyCall{
+        margin-top: 120px;
+    } */
 }
 @media (max-width: 1299px) {
     .hero-style1 {
@@ -11372,6 +11386,10 @@ span.select2-selection.select2-selection--single:focus {
     .service-block .box-title {
         font-size: 24px;
     }
+    .page-single {
+        padding-top: 91px;
+        padding-bottom: 20px;
+    }
 }
 .page-title {
     margin-top: -0.26em;
@@ -11381,9 +11399,6 @@ span.select2-selection.select2-selection--single:focus {
 .page-img {
     margin-bottom: 40px;
     overflow: hidden;
-}
-.page-single {
-    margin-bottom: 30px;
 }
 .service-feature {
     background-color: var(--white-color);
@@ -11705,6 +11720,7 @@ span.select2-selection.select2-selection--single:focus {
     .project-card .box-title {
         font-size: 22px;
     }
+    
 }
 .project-grid {
     position: relative;
@@ -12827,8 +12843,7 @@ span.select2-selection.select2-selection--single:focus {
 .mb-n5 {
     margin-bottom: -3rem;
 }
-.space,
-.space-top {
+.space {
     padding-top: var(--section-space);
 }
 .space,
@@ -12852,8 +12867,7 @@ span.select2-selection.select2-selection--single:focus {
     padding-bottom: calc(var(--section-space) - 40px);
 }
 @media (max-width: 991px) {
-    .space,
-    .space-top {
+    .space {
         padding-top: var(--section-space-mobile);
     }
     .space,
@@ -12878,6 +12892,9 @@ span.select2-selection.select2-selection--single:focus {
     .space-extra2,
     .space-extra2-bottom {
         padding-bottom: 70px;
+    }
+    .EmergencyCall {
+        margin-top: 70px;
     }
 }
 .theme-yellow {
@@ -13764,6 +13781,7 @@ span.select2-selection.select2-selection--single:focus {
     .brand-title4 {
         display: none;
     }
+    
 }
 .faq-area {
     position: relative;
@@ -14172,6 +14190,13 @@ span.select2-selection.select2-selection--single:focus {
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
     }
+    .EmergencyCall{
+        margin-top: 120px;
+    }
+    .page-single{
+        padding-top: 120px;
+        padding-bottom: 20px;
+    }
 }
 .team-img.border-top {
     border-top: 5px solid var(--theme-color) !important;
@@ -14333,6 +14358,13 @@ span.select2-selection.select2-selection--single:focus {
 @media (min-width: 1922px) {
     .testi-sec4 {
         background-position: center center;
+    }
+    .EmergencyCall{
+        margin-top: 120px;
+    }
+    .page-single{
+        padding-top: 120px;
+        padding-bottom: 20px;
     }
 }
 .testi-block_content {
