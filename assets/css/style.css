@@ -4406,7 +4406,7 @@ ol.wp-block-rss {
     gap: 15px;
 }
 .header-info .icon-btn {
-    color: var(--theme-color);
+    color: var(--theme-color2);
     border-radius: 99px;
 }
 .header-info .icon-btn:hover {
@@ -8694,10 +8694,10 @@ span.select2-selection.select2-selection--single:focus {
     margin-left: auto;
 }
 .contact-sec1 .call-icon {
-    background-color: var(--theme-color);
+    background-color: var(--theme-color2);
     width: 120px;
     height: 100%;
-    padding: 65px 0;
+    padding: 88px 0;
     text-align: center;
     -webkit-transform: skewX(-15deg);
     -ms-transform: skewX(-15deg);
