@@ -459,24 +459,27 @@
 //     // }
 //   });
 
-const langBtnName = document.querySelector("#langBtnName");
-const linkParent = document.querySelector("#countriesList");
-const langLink = document.querySelectorAll('#countriesList li');
-console.log('langLink', langLink);
+// const langBtnName = document.querySelector("#langBtnName");
+// const linkParent = document.querySelector("#countriesList");
+// const langLink = document.querySelectorAll('#countriesList li');
+// console.log('langLink', langLink);
 
-// const activeLangLink = (tag) => {
-//     console.log('tag:', tag.innerText);
-//     // linkParent.querySelector(".activeLang").classList.remove("activeLang");
-//     // tag.classList.add("activeLang");
-//   };
+// // const activeLangLink = (tag) => {
+// //     console.log('tag:', tag.innerText);
+// //     // linkParent.querySelector(".activeLang").classList.remove("activeLang");
+// //     // tag.classList.add("activeLang");
+// //   };
 
-langLink.forEach(link =>{
-    console.log(link);
-    link.addEventListener('click', () =>{
-        console.log('ddddd', link.innerText);
-        linkParent.querySelector(".activeLang").classList.remove("activeLang");
-        link.classList.add("activeLang");
-        langBtnName.textContent = link.innerText;
-        countriesList.classList.add('d-none');
-    })
-})
+// langLink.forEach(link =>{
+//     console.log(link);
+//     link.addEventListener('click', () =>{
+//         console.log('ddddd', link.innerText);
+//         linkParent.querySelector(".activeLang").classList.remove("activeLang");
+//         link.classList.add("activeLang");
+//         langBtnName.textContent = link.innerText;
+//         countriesList.classList.add('d-none');
+//     })
+// })
+
+
+

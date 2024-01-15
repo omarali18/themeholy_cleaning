@@ -1,0 +1,39 @@
+
+/* .mobileLangBtn css */
+#mobileLangBtn{
+   background-color: #242057;
+   width: 40px;
+   border: none;
+   border-radius: 5px;
+}
+
+
+.country-list {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  width: 166px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: max-height 0.5s ease, opacity 0.5s ease; /* Added transition */
+}
+.country-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+  color: black;
+}
+.country-list li:last-child {
+  border-bottom: none;
+}
+.country-list li:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+.activeLang {
+  background-color: #3C79C9;
+  color: white;
+}

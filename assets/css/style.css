@@ -4179,6 +4179,7 @@ ol.wp-block-rss {
     content: "";
     height: 28px;
     width: 1px;
+    /* background-color: red; */
     background-color: var(--body-color);
     position: absolute;
     top: -1px;
@@ -4218,7 +4219,7 @@ ol.wp-block-rss {
 }
 .header-layout1 .menu-area {
     position: relative;
-    z-index: 2;
+    z-index: 0;
     background-color: var(--white-color);
 }
 .header-layout1 .menu-top,
@@ -4300,6 +4301,7 @@ ol.wp-block-rss {
     .header-layout1 .header-button .themeholy-btn {
         display: none;
     }
+    
 }
 @media (max-width: 1299px) {
     .header-layout1 .logo-bg {
@@ -4316,7 +4318,7 @@ ol.wp-block-rss {
         display: none;
     }
     .header-links li:nth-child(3) {
-        display: none;
+        /* display: none; */
     }
 }
 @media (max-width: 1199px) {
@@ -6055,9 +6057,14 @@ ul.comment-list:has(> .themeholy-comment-item ~ .themeholy-comment-item):first-c
     .hero-title {
         font-size: 68px;
     }
-    /* .EmergencyCall{
-        margin-top: 120px;
-    } */
+}
+@media (min-width: 1400px) {
+    .header-links li:not(:nth-last-child(3)):after {
+        width: 0px;
+    }
+    .header-links li:nth-child(3){
+        display: none;
+    }
 }
 @media (max-width: 1299px) {
     .hero-style1 {
