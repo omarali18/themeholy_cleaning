@@ -964,7 +964,7 @@ textarea.is-invalid {
     font-size: 18px;
     z-index: 1;
     color: var(--white-color);
-    background-color: var(--theme-color);
+    background-color: var(--theme-color2);
     border-radius: 50%;
 }
 .themeholy-menu-wrapper .themeholy-menu-toggle:hover {
@@ -975,7 +975,7 @@ textarea.is-invalid {
     width: 100%;
     max-width: 310px;
     background-color: #fff;
-    border-right: 3px solid var(--theme-color);
+    border-right: 3px solid var(--theme-color2);
     height: 100%;
     position: relative;
     left: -110%;
@@ -1098,7 +1098,7 @@ textarea.is-invalid {
     padding: 0;
     font-size: 20px;
     border: none;
-    background-color: var(--theme-color);
+    background-color: var(--theme-color2);
     color: var(--white-color);
     display: inline-block;
     border-radius: 0;
@@ -6004,7 +6004,7 @@ ul.comment-list:has(> .themeholy-comment-item ~ .themeholy-comment-item):first-c
     height: 80px;
     width: 3px;
     background-image: -webkit-linear-gradient(top, var(--theme-color) 0%, rgba(232, 58, 21, 0) 100%);
-    background-image: linear-gradient(180deg, var(--theme-color) 0%, rgba(232, 58, 21, 0) 100%);
+    background-image: linear-gradient(180deg, var(--theme-color2) 0%, rgba(232, 58, 21, 0) 100%);
     position: absolute;
     left: calc(50% - 1.5px);
 }
@@ -8694,7 +8694,8 @@ span.select2-selection.select2-selection--single:focus {
     margin-left: auto;
 }
 .contact-sec1 .call-icon {
-    background-color: var(--theme-color2);
+    /* background-color: var(--theme-color2); */
+    background-color: #3CBBC9;
     width: 120px;
     height: 100%;
     padding: 88px 0;
