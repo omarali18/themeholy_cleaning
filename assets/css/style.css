@@ -4318,7 +4318,7 @@ ol.wp-block-rss {
         display: none;
     }
     .header-links li:nth-child(3) {
-        /* display: none; */
+        display: none;
     }
 }
 @media (max-width: 1199px) {
@@ -6059,12 +6059,12 @@ ul.comment-list:has(> .themeholy-comment-item ~ .themeholy-comment-item):first-c
     }
 }
 @media (min-width: 1400px) {
-    .header-links li:not(:nth-last-child(3)):after {
+    /* .header-links li:not(:nth-last-child(3)):after {
         width: 0px;
     }
     .header-links li:nth-child(3){
         display: none;
-    }
+    } */
 }
 @media (max-width: 1299px) {
     .hero-style1 {

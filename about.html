@@ -100,6 +100,7 @@
     <link rel="stylesheet" href="assets/css/app.min.css" />
     <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/myStyle.css" />
   </head>
   <body>
     
@@ -155,19 +156,25 @@
                       <a href="https://www.facebook.com/"
                         ><i class="fab fa-facebook-f"></i
                       ></a>
-                      <a href="https://www.twitter.com/"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
+                      
                       <a href="https://www.linkedin.com/"
                         ><i class="fab fa-linkedin-in"></i
                       ></a>
                       <a href="https://www.instagram.com/"
                         ><i class="fab fa-instagram"></i
                       ></a>
-                      <a href="https://www.youtube.com/"
-                        ><i class="fab fa-youtube"></i
-                      ></a>
+                      
                     </div>
+                  </li>
+                  <li class="rrohid d-inline-block d-xxl-none position-relative">
+                    <button id="mobileLangBtn" onclick="langShowButton(this)">
+                      <img src="assets/img/icon/language_icon.svg" alt="dd">
+                    </button>
+                    <ul class="country-list d-none" style="right: 0px;width: 117px;color: black;overflow: hidden;">
+                      <li onclick="selectLang(this)" style="width: 100%;font-size: 15px; font-weight: 600;" class="activeLang">ENGLISH</li>
+                      <li onclick="selectLang(this)" style="width: 100%;font-size: 15px; font-weight: 600;">SUOMI</li>
+                      <li onclick="selectLang(this)" style="width: 100%;font-size: 15px; font-weight: 600;">SVENSKA</li>
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -234,57 +241,20 @@
                       </div>
                     </div>
                     <div class="col-auto d-none d-xxl-block position-relative">
-                     <style>
-                       .country-list {
-                         position: absolute;
-                         list-style: none;
-                         padding: 0;
-                         width: 166px;
-                         max-height: 200px;
-                         overflow-y: auto;
-                         background-color: #fff;
-                         border-radius: 5px;
-                         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-                         transition: max-height 0.5s ease, opacity 0.5s ease; /* Added transition */
-                       }
-
-                       .country-list li {
-                         padding: 10px;
-                         border-bottom: 1px solid #ddd;
-                         transition: background-color 0.3s ease;
-                       }
-
-                       .country-list li:last-child {
-                         border-bottom: none;
-                       }
-
-                       .country-list li:hover {
-                         background-color: #f0f0f0;
-                       }
-                       .activeLang{
-                         background-color: rgb(241, 241, 241);
-                       }
-                     </style>
-                     <button href="" class="themeholy-btn style4" id="showCountriesBtn">
-                       <span id="langBtnName">English</span> <i class="far fa-language fa-lg text-white ms-2"></i> 
-                     </button>
-                     <ul class="country-list d-none" id="countriesList">
-                       <li  class="activeLang">ENGLISH</li>
-                       <li  >SUOMI</li>
-                       <li  >SVENSKA</li>
-                   </ul>
-                   <script>
-                     const showCountriesBtn = document.getElementById('showCountriesBtn');
-                     const countriesList = document.getElementById('countriesList');
-
-                     showCountriesBtn.addEventListener('click', function(e) {
-                       // e.preventDefault()
-                       console.log("ssssssss");
-                       countriesList.classList.toggle('d-none');
-                     });
-
-                   
-                   </script>
+                      <button
+                      href=""
+                      class="themeholy-btn style4"
+                      id="showCountriesBtn"
+                      onclick="langShowButton(this)"
+                    >
+                      <span id="langBtnName">English</span>
+                      <img class="ms-2" src="assets/img/icon/language_icon.svg" alt="lang" style="width: 25px;">
+                    </button>
+                    <ul class="country-list d-none countriesList" id="">
+                      <li onclick="selectLang(this)" class="activeLang">ENGLISH</li>
+                      <li onclick="selectLang(this)">SUOMI</li>
+                      <li onclick="selectLang(this)">SVENSKA</li>
+                    </ul>
                    </div>
                   </div>
                 </div>
@@ -676,5 +646,6 @@
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/app.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/myMake.js"></script>
   </body>
 </html>
