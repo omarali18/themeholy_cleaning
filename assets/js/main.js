@@ -212,6 +212,7 @@
        (function () {
            var t,
                s = !0;
+               
            function a(a) {
                a = a.split(",");
                for (var o = 0; o < a.length; o++) (t = l + " " + a[o]), e(t).val() ? (e(t).removeClass("is-invalid"), (s = !0)) : (e(t).addClass("is-invalid"), (s = !1));
@@ -228,9 +229,12 @@
            jQuery
                .ajax({ url: e(l).attr("action"), data: t, type: "POST" })
                .done(function (t) {
+                console.log('done ', t);
                    d.removeClass("error"), d.addClass("success"), d.text(t), e(l + ' input:not([type="submit"]),' + l + " textarea").val("");
                })
                .fail(function (e) {
+                console.log('fail ', t);
+                
                    d.removeClass("success"), d.addClass("error"), "" !== e.responseText ? d.html(e.responseText) : d.html("Oops! An error occured and your message could not be sent.");
                });
    }
