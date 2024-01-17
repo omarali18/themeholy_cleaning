@@ -11,15 +11,12 @@ const langLink = document.querySelectorAll('.countriesList li');
 
 
 const langShowButton = (tag) =>{
-   console.log("2k2k2k2k2k2", tag.parentNode.children[1]);
    tag.parentNode.children[1].classList.toggle('d-none')
 }
 
 
 // langLink.forEach(link =>{
-//    console.log(link);
 //    link.addEventListener('click', () =>{
-//       console.log();
 //       linkParent.querySelector(".activeLang").classList.remove("activeLang");
 //       link.classList.add("activeLang");
 //       link.parentNode.parentNode.children[0].children[0].textContent = link.innerText;
@@ -28,42 +25,41 @@ const langShowButton = (tag) =>{
 // });
 
 
-// const selectLang = (tag, event) =>{
-//    var currentURL = window.location.href;
-//    var filename = currentURL.split("/").pop(); 
-//    // console.log("Current Filename:", filename);
-//    let newURL;
-   
-//    if (tag.innerText == 'ENGLISH') {
-//       newURL = `http://127.0.0.1:5500/english/${filename}`
-//    }
-//    else if(tag.innerText == 'SUOMI'){
-//       newURL = `http://127.0.0.1:5500/suomi/${filename}`
-//    }
-//    else if(tag.innerText == 'SVENSKA'){
-//       newURL = `http://127.0.0.1:5500/svenska/${filename}`
-//    }
-//    window.location.href = newURL;
-//    tag.parentNode.classList.add('d-none');
-// }
-
 const selectLang = (tag, event) =>{
    var currentURL = window.location.href;
    var filename = currentURL.split("/").pop(); 
    let newURL;
    
    if (tag.innerText == 'ENGLISH') {
-      newURL = `https://omarali18.github.io/themeholy_cleaning/english/${filename}`
+      newURL = `http://127.0.0.1:5500/english/${filename}`
    }
    else if(tag.innerText == 'SUOMI'){
-      newURL = `https://omarali18.github.io/themeholy_cleaning/suomi/${filename}`
+      newURL = `http://127.0.0.1:5500/suomi/${filename}`
    }
    else if(tag.innerText == 'SVENSKA'){
-      newURL = `https://omarali18.github.io/themeholy_cleaning/svenska/${filename}`
+      newURL = `http://127.0.0.1:5500/svenska/${filename}`
    }
    window.location.href = newURL;
    tag.parentNode.classList.add('d-none');
 }
+
+// const selectLang = (tag, event) =>{
+//    var currentURL = window.location.href;
+//    var filename = currentURL.split("/").pop(); 
+//    let newURL;
+   
+//    if (tag.innerText == 'ENGLISH') {
+//       newURL = `https://omarali18.github.io/themeholy_cleaning/english/${filename}`
+//    }
+//    else if(tag.innerText == 'SUOMI'){
+//       newURL = `https://omarali18.github.io/themeholy_cleaning/suomi/${filename}`
+//    }
+//    else if(tag.innerText == 'SVENSKA'){
+//       newURL = `https://omarali18.github.io/themeholy_cleaning/svenska/${filename}`
+//    }
+//    window.location.href = newURL;
+//    tag.parentNode.classList.add('d-none');
+// }
 
 window.onload = function() {
    var currentURL = window.location.href;
@@ -71,10 +67,8 @@ window.onload = function() {
    for (let i = 0; i < countryparent.length; i++) {
       let listParent = countryparent[i].querySelectorAll('li')
       listParent.forEach(li =>{
-         console.log("all li = 111", li, li.innerText.toLowerCase());
          // if (li.innerText == "SUOMI") {
          if (currentURL.includes(li.innerText.toLowerCase())) {
-            // console.log('test 111111111111111');
             langBtnName.textContent = li.innerText;
             li.classList.add("activeLang");
          }
@@ -82,7 +76,36 @@ window.onload = function() {
             li.classList.remove("activeLang")
          }
       })
-      console.log("The URL includes 'suomi'", countryparent[i], listParent);
       
    }
  };
+
+ const sendBtn = document.getElementById('sendBtn');
+//  Password : "ypxwxeoxanwubyid", To : 'omarali1814000@gmail.com',
+
+ sendBtn.addEventListener('click', function(e) {
+   e.preventDefault()
+   let name = document.getElementById("name").value;
+   let email = document.getElementById("email").value;
+   let number = document.getElementById("number").value;
+   let message = document.getElementById("message").value;
+   let body = 'Name: ' +name+ '<br/> Email: ' +email+ '<br/> Number: ' +number+ '<br/> Message:' +message;
+   console.log('hi send', body);
+
+   let parms={
+      name : document.getElementById("name").value,
+      email : document.getElementById("email").value,
+      number : document.getElementById("number").value,
+      message : document.getElementById("message").value,
+   }
+
+   emailjs.send('service_v9qu0fl','template_sakffct', parms).then(alert("Email send.!!"))
+   console.log("ssss");
+})
+
+
+
+
+// service id = service_v9qu0fl
+
+
