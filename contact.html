@@ -326,10 +326,11 @@
                   Contact for <span class="text-theme">Cleaning</span>
                 </h4>
                 <form
-                  action="https://themeholy.com/html/plumer/demo/mail.php"
                   method="POST"
-                  class="contact-form ajax-contact"
+                  class="contact-form "
                 >
+                <p class="mb-0 mt-3 text-danger" id="error_message"></p>
+          <p class="mb-0 mt-3 text-success" id="success_message"></p>
                   <div class="row">
                     <div class="form-group col-md-12">
                       <input
@@ -358,15 +359,6 @@
                         placeholder="Phone Number"
                       />
                     </div>
-                    <!-- <div class="form-group col-md-6">
-                                            <select name="subject" id="subject" class="form-select">
-                                                <option value="" disabled="disabled" selected="selected" hidden>Select Subject</option>
-                                                <option value="AC Installation">AC Installation</option>
-                                                <option value="Plumbing Service">Plumbing Service</option>
-                                                <option value="AC Repairing">AC Repairing</option>
-                                                <option value="Dust Cleaning">Dust Cleaning</option>
-                                            </select>
-                                        </div> -->
                     <div class="form-group col-12">
                       <textarea
                         name="message"
@@ -381,7 +373,6 @@
                       <button class="themeholy-btn btn-fw">Submit Now</button>
                     </div>
                   </div>
-                  <p class="form-messages mb-0 mt-3"></p>
                 </form>
               </div>
             </div>

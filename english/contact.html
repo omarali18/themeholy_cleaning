@@ -338,6 +338,8 @@
                   method="POST"
                   class="contact-form "
                 >
+                <p class="mb-0 mt-3 text-danger" id="error_message"></p>
+                <p class="mb-0 mt-3 text-success" id="success_message"></p>
                   <div class="row">
                     <div class="form-group col-md-12">
                       <input
@@ -359,7 +361,7 @@
                     </div>
                     <div class="form-group col-md-6">
                       <input
-                        type="tel"
+                        type="number"
                         class="form-control"
                         name="number"
                         id="number"
@@ -386,10 +388,10 @@
                       ></textarea>
                     </div>
                     <div class="form-btn col-12">
-                      <button class="themeholy-btn btn-fw" id="sendBtn"~>Submit Now</button>
+                      <button class="themeholy-btn btn-fw" id="sendBtn">Submit Now</button>
                     </div>
                   </div>
-                  <!-- <p class="form-messages mb-0 mt-3"></p> -->
+                 
                 </form>
               </div>
             </div>

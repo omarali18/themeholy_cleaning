@@ -81,6 +81,8 @@ window.onload = function() {
  };
 
  const sendBtn = document.getElementById('sendBtn');
+ const error_message = document.getElementById("error_message")
+ const success_message = document.getElementById("success_message")
 //  Password : "ypxwxeoxanwubyid", To : 'omarali1814000@gmail.com',
 
  sendBtn.addEventListener('click', function(e) {
@@ -89,22 +91,33 @@ window.onload = function() {
    let email = document.getElementById("email").value;
    let number = document.getElementById("number").value;
    let message = document.getElementById("message").value;
-   let body = 'Name: ' +name+ '<br/> Email: ' +email+ '<br/> Number: ' +number+ '<br/> Message:' +message;
-   console.log('hi send', body);
 
    let parms={
       name : document.getElementById("name").value,
       email : document.getElementById("email").value,
       number : document.getElementById("number").value,
-      message : document.getElementById("message").value,
+      message: document.getElementById("message").value === '' ? "Customer did not write any message." : document.getElementById("message").value
    }
-
-   emailjs.send('service_v9qu0fl','template_sakffct', parms).then(alert("Email send.!!"))
-   console.log("ssss");
+   
+   if (name != '' && email != '' && number != '' ) {
+      emailjs.send('service_v9qu0fl','template_sakffct', parms).then(success_message.innerText = 'We received your message successful.');
+      // success_message.innerText = 'We received your message successful.'
+   }else{
+      error_message.innerText = "Please fill up name, email, number.!!"
+   }
+   
 })
+// message : document.getElementById("message").value,
 
+const RemoveError = ()=>{
+   error_message.innerText = ""
+   success_message.innerText = ""
+}
 
-
+setInterval(RemoveError,8000)
+// setTimeout(() => {
+//    console.log("Delayed for 1 second.");
+//  }, 1000);
 
 // service id = service_v9qu0fl
 
