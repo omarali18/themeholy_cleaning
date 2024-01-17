@@ -809,7 +809,7 @@ textarea.is-invalid {
     left: auto;
 }
 .slick-arrow:hover {
-    background-color: var(--theme-color);
+    background-color: var(--theme-color2);
     color: var(--white-color);
 }
 .arrow-margin .slick-arrow {
