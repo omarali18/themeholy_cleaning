@@ -102,15 +102,15 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/myStyle.css" />
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("S0dOYGUNYr5YYj0nV");
-   })();
-</script>
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("S0dOYGUNYr5YYj0nV");
+      })();
+    </script>
   </head>
   <body>
     <div class="themeholy-menu-wrapper">
@@ -131,22 +131,51 @@
             <li class="menu-item-has-children">
               <a href="index.html">Home</a>
             </li>
+            
             <li class="menu-item-has-children">
-              <a href="service-details.html#">Services</a>
+              <a href="service-details.html#">Basic Cleaning</a>
               <ul class="sub-menu">
-                <li><a href="service-details.html#homeWash">Home Wash</a></li>
                 <li>
-                  <a href="service-details.html#BasicCleaning"
-                    >Basic Cleaning</a
+                  <a href="service-details.html#HomeCleaning">Home cleaning</a>
+                </li>
+                <li>
+                  <a href="service-details.html#OfficeCommercialCleaning"
+                    >Office / Commercial cleaning</a
                   >
                 </li>
                 <li>
-                  <a href="service-details.html#GlassCleaning"
-                    >Glass Cleaning</a
+                  <a href="service-details.html#BuildingCleaning"
+                    >Building Cleaning</a
                   >
                 </li>
               </ul>
             </li>
+            <li class="menu-item-has-children">
+              <a href="maintenance-Cleaning.html">Maintenance Cleaning</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="maintenance-Cleaning.html#FloorWashing"
+                    >Floor washing/waxing/Highspeed Polishing</a
+                  >
+                </li>
+                <li>
+                  <a href="maintenance-Cleaning.html#DeepCleaning"
+                    >Deep cleaning (House/Office)</a
+                  >
+                </li>
+                <li>
+                  <a href="maintenance-Cleaning.html#MattWashing"
+                    >Matt wahing</a
+                  >
+                </li>
+                <li>
+                  <a href="maintenance-Cleaning.html#UpperDusting"
+                    >Upper dusting</a
+                  >
+                </li>
+              </ul>
+            </li>
+
             <li><a href="about.html">About Us</a></li>
             <li><a href="responsibilities.html">Responsibilities</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -251,7 +280,7 @@
         <div class="menu-area">
           <div class="container themeholy-container">
             <div class="row align-items-center justify-content-between">
-              <div class="col-auto">
+              <div class="col-auto d-xl-block d-lg-none d-sm-block">
                 <div class="header-logo">
                   <a href="index.html"
                     ><img
@@ -335,7 +364,7 @@
                 </div>
                 <div class="menu-wrap">
                   <div class="row">
-                    <div class="col text-end text-xl-start">
+                    <div class="col text-center text-xl-start">
                       <nav class="main-menu d-none d-lg-inline-block">
                         <ul>
                           <li class="menu-item-has-children">
@@ -371,21 +400,53 @@
                             </ul> -->
                           </li>
                           <li class="menu-item-has-children">
-                            <a href="service-details.html#">Services</a>
+                            <a href="service-details.html#">Basic Cleaning</a>
                             <ul class="sub-menu">
                               <li>
-                                <a href="service-details.html#homeWash#"
-                                  >Home Wash</a
+                                <a href="service-details.html#HomeCleaning"
+                                  >Home cleaning</a
                                 >
                               </li>
                               <li>
-                                <a href="service-details.html#BasicCleaning#"
-                                  >Basic Cleaning</a
+                                <a
+                                  href="service-details.html#OfficeCommercialCleaning"
+                                  >Office / Commercial cleaning</a
                                 >
                               </li>
                               <li>
-                                <a href="service-details.html#GlassCleaning#"
-                                  >Glass Cleaning</a
+                                <a
+                                  href="service-details.html#BuildingCleaning"
+                                  >Building Cleaning</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu-item-has-children">
+                            <a href="maintenance-Cleaning.html"
+                              >Maintenance Cleaning</a
+                            >
+                            <ul class="sub-menu">
+                              <li>
+                                <a href="maintenance-Cleaning.html#FloorWashing"
+                                  >Floor washing/waxing/Highspeed Polishing</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="maintenance-Cleaning.html#DeepCleaning"
+                                  >Deep cleaning (House/Office)</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="maintenance-Cleaning.html#MattWashing"
+                                  >Matt wahing</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="maintenance-Cleaning.html#UpperDusting"
+                                  >Upper dusting</a
                                 >
                               </li>
                             </ul>
@@ -486,7 +547,7 @@
               </div>
             </div>
           </div>
-          <div class="logo-bg"></div>
+          <div class="logo-bg d-xl-block d-lg-none d-sm-block"></div>
         </div>
       </div>
     </header>
@@ -799,6 +860,7 @@
         </div>
         <div
           class="row slider-shadow themeholy-carousel"
+          id="seeOurSlider"
           data-slide-show="3"
           data-lg-slide-show="3"
           data-md-slide-show="2"
@@ -817,12 +879,12 @@
               <div class="service-card_content">
                 <div class="shape1"></div>
                 <h3 class="box-title">
-                  <a href="service-details.html#homeWash">Home Wash</a>
+                  <a href="service-details.html">Basic Cleaning</a>
                 </h3>
                 <p class="service-card_text">
-                  We offer extensive home wash services, encompassing clothing,
-                  linens, surfaces, and personal items, ensuring a thorough and
-                  complete cleaning experience
+                  Trust our cleaning for a spotless, sanitized environment. From
+                  dusting to disinfection, we ensure a thorough, efficient, and
+                  reliable clean, refreshing your space.
                 </p>
                 <a
                   href="service-details.html#homeWash"
@@ -849,18 +911,14 @@
               <div class="service-card_content">
                 <div class="shape1"></div>
                 <h3 class="box-title">
-                  <a href="service-details.html#BasicCleaning"
-                    >Basic Cleaning</a
-                  >
+                  <a href="maintenance-Cleaning.html">Maintenance Cleaning</a>
                 </h3>
                 <p class="service-card_text">
-                  Trust our cleaning for a spotless, sanitized environment. From
-                  dusting to disinfection, we ensure a thorough, efficient, and
-                  reliable clean, refreshing your space.
+                  Maintenance cleaning involves regular, scheduled tasks to
+                  prevent dirt and clutter buildup, ensuring a consistently
+                  clean and functional environment.
                 </p>
-                <a
-                  href="service-details.html#BasicCleaning"
-                  class="themeholy-btn"
+                <a href="maintenance-Cleaning.html" class="themeholy-btn"
                   >Read More</a
                 >
                 <div class="ripple-shape">
@@ -883,17 +941,17 @@
               <div class="service-card_content">
                 <div class="shape1"></div>
                 <h3 class="box-title">
-                  <a href="service-details.html#GlassCleaning"
-                    >Glass Cleaning</a
+                  <a href="service-details.html#OzonationDeodorization"
+                    >Ozonation and deodorization</a
                   >
                 </h3>
                 <p class="service-card_text">
-                  We specialize in professional glass cleaning services,
-                  ensuring crystal-clear windows and surfaces to enhance the
-                  clarity and aesthetics of your space.
+                  Is there any bad smell in your house or in your car or in the
+                  apartment. We are here to help you to get rid from it. By
+                  oxidation you can get fresh and healthy air to breath.
                 </p>
                 <a
-                  href="service-details.html#GlassCleaning"
+                  href="service-details.html#OzonationDeodorization"
                   class="themeholy-btn"
                   >Read More</a
                 >
@@ -906,7 +964,7 @@
             </div>
           </div>
         </div>
-        <div class="text-center d-md-none d-sm-block mt-3">
+        <!-- <div class="text-center d-md-none d-sm-block mt-3">
           <a
             href=""
             style="
@@ -940,6 +998,25 @@
               border-radius: 30px;
             "
           ></a>
+        </div> -->
+
+        <div class="col-auto d-block d-lg-none d-sm-block mt-5">
+          <div class="sec-btn mb-0">
+            <div class="icon-box">
+              <button
+                data-slick-prev="#seeOurSlider"
+                class="slick-arrow default"
+              >
+                <i class="far fa-arrow-left"></i>
+              </button>
+              <button
+                data-slick-next="#seeOurSlider"
+                class="slick-arrow default"
+              >
+                <i class="far fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1002,9 +1079,7 @@
           <h3 class="title">Having an urgent problem and can’t wait?</h3>
         </div>
         <!-- action="https://formspree.io/f/xeqyorer" -->
-        <!-- class="appoitment-form1" required  4424B0C3F273F62C39055521CA96C42FF7F6 --> 
-
-        
+        <!-- class="appoitment-form1" required  4424B0C3F273F62C39055521CA96C42FF7F6 -->
 
         <form method="POST" class="appoitment-form1">
           <p class="mb-0 mt-3 text-danger" id="error_message"></p>
@@ -1012,7 +1087,13 @@
           <div class="row gap-sm-3 gap-md-0 gap-3">
             <div class="col-md-4">
               <label for="name">Your name *</label>
-              <input type="text" class="form-control" name="name" id="name" required/>
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                id="name"
+                required
+              />
             </div>
             <div class="col-md-4">
               <label for="email">Your Email *</label>
@@ -1059,9 +1140,7 @@
               </button>
             </div>
           </div>
-          
         </form>
-
       </div>
     </div>
     <div class="overflow-hidden space">
@@ -1606,7 +1685,7 @@
     </section>
 
     <!-- Our Completed Projects display none -->
-    <!-- <section class="project-sec1">
+    <section class="project-sec1" style="margin-bottom: 100px;">
       <div class="container">
         <div
           class="row justify-content-lg-between justify-content-center align-items-center"
@@ -1650,22 +1729,20 @@
             <div class="project-card">
               <div class="project-img">
                 <img
-                  src="../assets/img/project/project_1_1.jpg"
+                  src="../assets/img/project/project_1_1.png"
                   alt="project image"
                 />
               </div>
-              <div class="project-content-wrap">
-                <div class="project-content">
-                  <p class="project-subtitle">Kitchen</p>
-                  <h3 class="box-title">
-                    <a href="project-details.html">Plumbing Diagnosis</a>
-                  </h3>
-                </div>
-                <a
-                  href="../assets/img/project/project_1_1.jpg"
-                  class="icon-btn popup-image"
-                  ><i class="far fa-plus"></i
-                ></a>
+              
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="project-card">
+              <div class="project-img">
+                <img
+                  src="../assets/img/project/project_1_2.png"
+                  alt="project image"
+                />
               </div>
             </div>
           </div>
@@ -1673,45 +1750,9 @@
             <div class="project-card">
               <div class="project-img">
                 <img
-                  src="../assets/img/project/project_1_2.jpg"
+                  src="../assets/img/project/project_1_3.png"
                   alt="project image"
                 />
-              </div>
-              <div class="project-content-wrap">
-                <div class="project-content">
-                  <p class="project-subtitle">Kitchen</p>
-                  <h3 class="box-title">
-                    <a href="project-details.html">Drain Plumbing</a>
-                  </h3>
-                </div>
-                <a
-                  href="../assets/img/project/project_1_2.jpg"
-                  class="icon-btn popup-image"
-                  ><i class="far fa-plus"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-6">
-            <div class="project-card">
-              <div class="project-img">
-                <img
-                  src="../assets/img/project/project_1_3.jpg"
-                  alt="project image"
-                />
-              </div>
-              <div class="project-content-wrap">
-                <div class="project-content">
-                  <p class="project-subtitle">Kitchen</p>
-                  <h3 class="box-title">
-                    <a href="project-details.html">Water Line Repair</a>
-                  </h3>
-                </div>
-                <a
-                  href="../assets/img/project/project_1_3.jpg"
-                  class="icon-btn popup-image"
-                  ><i class="far fa-plus"></i
-                ></a>
               </div>
             </div>
           </div>
@@ -1723,24 +1764,11 @@
                   alt="project image"
                 />
               </div>
-              <div class="project-content-wrap">
-                <div class="project-content">
-                  <p class="project-subtitle">Bathroom</p>
-                  <h3 class="box-title">
-                    <a href="project-details.html">Bathroom Plumbing</a>
-                  </h3>
-                </div>
-                <a
-                  href="../assets/img/project/project_1_4.jpg"
-                  class="icon-btn popup-image"
-                  ><i class="far fa-plus"></i
-                ></a>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <section class="space d-none">
       <div class="shape-mockup" data-bottom="0" data-left="0">
@@ -2181,7 +2209,12 @@
         </div>
       </div>
       <div class="shape-mockup footer-shape1" data-bottom="73px" data-left="3%">
-        <img src="../assets/img/shape/man_shape_1.png" alt="shape" />
+        <img
+          src="../assets/img/shape/man_shape_1.png"
+          alt="shape"
+          width="190"
+          height="392"
+        />
       </div>
       <div class="shape-mockup" data-bottom="0%" data-right="0%">
         <img src="../assets/img/shape/footer_shape_2.png" alt="shape" />
@@ -2204,8 +2237,6 @@
         ></path>
       </svg>
     </div>
-
-   
 
     <script src="../assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/app.min.js"></script>

@@ -61,6 +61,8 @@ const selectLang = (tag, event) =>{
    tag.parentNode.classList.add('d-none');
 }
 
+
+
 window.onload = function() {
    var currentURL = window.location.href;
    let countryparent = document.querySelectorAll(".country-list")
@@ -87,6 +89,7 @@ window.onload = function() {
 
  sendBtn.addEventListener('click', function(e) {
    e.preventDefault()
+   var currentURL = window.location.href;
    let name = document.getElementById("name").value;
    let email = document.getElementById("email").value;
    let number = document.getElementById("number").value;
@@ -100,10 +103,32 @@ window.onload = function() {
    }
    
    if (name != '' && email != '' && number != '' ) {
-      emailjs.send('service_v9qu0fl','template_sakffct', parms).then(success_message.innerText = 'We received your message successful.');
+      emailjs.send('service_v9qu0fl','template_sakffct', parms).then(function(response) {
+      if (currentURL.includes('english')) {
+        success_message.innerText = "We received your message successful!";
+      } else if (currentURL.includes('suomi')) {
+        success_message.innerText = "We received your message successful! 2";
+      } else if (currentURL.includes('svenska')) {
+        success_message.innerText = "We received your message successful! 3";
+      }
+    }
+         
+      );
       // success_message.innerText = 'We received your message successful.'
    }else{
-      error_message.innerText = "Please fill up name, email, number.!!"
+      if(currentURL.includes('english')){
+         error_message.innerText = "Please fill up name, email, number.!!"
+      }
+      else if(currentURL.includes('suomi')){
+         error_message.innerText = "Please fill up name, email, number.!! 2"
+      }
+      else if(currentURL.includes('svenska')){
+         error_message.innerText = "Please fill up name, email, number.!! 3"
+      }
+      // setInterval(RemoveError,8000)
+      setTimeout(() => {
+         RemoveError()
+      }, 8000);
    }
    
 })
@@ -114,7 +139,7 @@ const RemoveError = ()=>{
    success_message.innerText = ""
 }
 
-setInterval(RemoveError,8000)
+// setInterval(RemoveError,8000)
 // setTimeout(() => {
 //    console.log("Delayed for 1 second.");
 //  }, 1000);

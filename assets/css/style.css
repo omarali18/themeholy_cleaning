@@ -11665,7 +11665,7 @@ span.select2-selection.select2-selection--single:focus {
     height: 0;
     width: 100%;
     background-image: -webkit-linear-gradient(top, rgba(22, 25, 33, 0) 0%, #161921 71.35%);
-    background-image: linear-gradient(180deg, rgba(22, 25, 33, 0) 0%, #161921 71.35%);
+    background-image: linear-gradient(180deg, rgba(22, 25, 33, 0) 0%, #3cbbc98a 71.35%);
     opacity: 0;
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
@@ -11722,7 +11722,7 @@ span.select2-selection.select2-selection--single:focus {
     opacity: 1;
 }
 .process-sec1 {
-    /* padding-bottom: 280px; */
+    padding-bottom: 280px;
 }
 .project-sec1 {
     margin-top: -280px;

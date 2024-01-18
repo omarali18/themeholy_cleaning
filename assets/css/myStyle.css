@@ -32,6 +32,7 @@
 .country-list li:hover {
   background-color: #f0f0f0;
   color: black;
+  cursor: pointer;
 }
 .activeLang {
   background-color: #3C79C9;
