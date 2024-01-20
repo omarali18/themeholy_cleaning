@@ -25,41 +25,41 @@ const langShowButton = (tag) =>{
 // });
 
 
-// const selectLang = (tag, event) =>{
-//    var currentURL = window.location.href;
-//    var filename = currentURL.split("/").pop(); 
-//    let newURL;
-   
-//    if (tag.innerText == 'ENGLISH') {
-//       newURL = `http://127.0.0.1:5500/english/${filename}`
-//    }
-//    else if(tag.innerText == 'SUOMI'){
-//       newURL = `http://127.0.0.1:5500/suomi/${filename}`
-//    }
-//    else if(tag.innerText == 'SVENSKA'){
-//       newURL = `http://127.0.0.1:5500/svenska/${filename}`
-//    }
-//    window.location.href = newURL;
-//    tag.parentNode.classList.add('d-none');
-// }
-
 const selectLang = (tag, event) =>{
    var currentURL = window.location.href;
    var filename = currentURL.split("/").pop(); 
    let newURL;
    
    if (tag.innerText == 'ENGLISH') {
-      newURL = `https://omarali18.github.io/themeholy_cleaning/english/${filename}`
+      newURL = `http://127.0.0.1:5500/english/${filename}`
    }
    else if(tag.innerText == 'SUOMI'){
-      newURL = `https://omarali18.github.io/themeholy_cleaning/suomi/${filename}`
+      newURL = `http://127.0.0.1:5500/suomi/${filename}`
    }
    else if(tag.innerText == 'SVENSKA'){
-      newURL = `https://omarali18.github.io/themeholy_cleaning/svenska/${filename}`
+      newURL = `http://127.0.0.1:5500/svenska/${filename}`
    }
    window.location.href = newURL;
    tag.parentNode.classList.add('d-none');
 }
+
+// const selectLang = (tag, event) =>{
+//    var currentURL = window.location.href;
+//    var filename = currentURL.split("/").pop(); 
+//    let newURL;
+   
+//    if (tag.innerText == 'ENGLISH') {
+//       newURL = `https://omarali18.github.io/themeholy_cleaning/english/${filename}`
+//    }
+//    else if(tag.innerText == 'SUOMI'){
+//       newURL = `https://omarali18.github.io/themeholy_cleaning/suomi/${filename}`
+//    }
+//    else if(tag.innerText == 'SVENSKA'){
+//       newURL = `https://omarali18.github.io/themeholy_cleaning/svenska/${filename}`
+//    }
+//    window.location.href = newURL;
+//    tag.parentNode.classList.add('d-none');
+// }
 
 
 
@@ -89,19 +89,36 @@ window.onload = function() {
 
  sendBtn.addEventListener('click', function(e) {
    e.preventDefault()
+
    var currentURL = window.location.href;
    let name = document.getElementById("name").value;
    let email = document.getElementById("email").value;
    let number = document.getElementById("number").value;
    let message = document.getElementById("message").value;
+   let attachmentInput = document.getElementById("attachment");
 
    let parms={
-      name : document.getElementById("name").value,
-      email : document.getElementById("email").value,
-      number : document.getElementById("number").value,
-      message: document.getElementById("message").value === '' ? "Customer did not write any message." : document.getElementById("message").value
+      name : name,
+      email : email,
+      number : number,
+      message : message === '' ? "Customer did not write any message." : message,
    }
+   if (attachmentInput.files.length > 0) {
+      // Get the file from the input
+      let attachmentFile = attachmentInput.files[0];
+      
+      // Create a FormData object to send the file
+      let formData = new FormData();
+      formData.append('attachment', attachmentFile);
+      console.log('attachmentInput.files.length = ', attachmentInput.files[0],formData);
+
+      // Add the FormData object to the parms
+      parms.attachment = formData;
+    } else {
+      parms.attachment = null; // Or you can omit this line if you want to handle it differently
+    }
    
+    console.log('parms = ', parms);
    if (name != '' && email != '' && number != '' ) {
       emailjs.send('service_v9qu0fl','template_sakffct', parms).then(function(response) {
       if (currentURL.includes('english')) {
@@ -130,6 +147,7 @@ window.onload = function() {
          RemoveError()
       }, 8000);
    }
+   
    
 })
 // message : document.getElementById("message").value,
