@@ -25,41 +25,41 @@ const langShowButton = (tag) =>{
 // });
 
 
-const selectLang = (tag, event) =>{
-   var currentURL = window.location.href;
-   var filename = currentURL.split("/").pop(); 
-   let newURL;
-   
-   if (tag.innerText == 'ENGLISH') {
-      newURL = `http://127.0.0.1:5500/english/${filename}`
-   }
-   else if(tag.innerText == 'SUOMI'){
-      newURL = `http://127.0.0.1:5500/suomi/${filename}`
-   }
-   else if(tag.innerText == 'SVENSKA'){
-      newURL = `http://127.0.0.1:5500/svenska/${filename}`
-   }
-   window.location.href = newURL;
-   tag.parentNode.classList.add('d-none');
-}
-
 // const selectLang = (tag, event) =>{
 //    var currentURL = window.location.href;
 //    var filename = currentURL.split("/").pop(); 
 //    let newURL;
    
 //    if (tag.innerText == 'ENGLISH') {
-//       newURL = `https://omarali18.github.io/themeholy_cleaning/english/${filename}`
+//       newURL = `http://127.0.0.1:5500/english/${filename}`
 //    }
 //    else if(tag.innerText == 'SUOMI'){
-//       newURL = `https://omarali18.github.io/themeholy_cleaning/suomi/${filename}`
+//       newURL = `http://127.0.0.1:5500/suomi/${filename}`
 //    }
 //    else if(tag.innerText == 'SVENSKA'){
-//       newURL = `https://omarali18.github.io/themeholy_cleaning/svenska/${filename}`
+//       newURL = `http://127.0.0.1:5500/svenska/${filename}`
 //    }
 //    window.location.href = newURL;
 //    tag.parentNode.classList.add('d-none');
 // }
+
+const selectLang = (tag, event) =>{
+   var currentURL = window.location.href;
+   var filename = currentURL.split("/").pop(); 
+   let newURL;
+   
+   if (tag.innerText == 'ENGLISH') {
+      newURL = `https://omarali18.github.io/themeholy_cleaning/english/${filename}`
+   }
+   else if(tag.innerText == 'SUOMI'){
+      newURL = `https://omarali18.github.io/themeholy_cleaning/suomi/${filename}`
+   }
+   else if(tag.innerText == 'SVENSKA'){
+      newURL = `https://omarali18.github.io/themeholy_cleaning/svenska/${filename}`
+   }
+   window.location.href = newURL;
+   tag.parentNode.classList.add('d-none');
+}
 
 
 
