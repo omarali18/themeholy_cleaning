@@ -110,25 +110,62 @@
         </button>
         <div class="mobile-logo">
           <a href="index.html"
-            ><img src="../assets/img/new_logo.svg" alt="Plumer" style="width: 200px; height: 70px"
+            ><img
+              src="../assets/img/new_logo.svg"
+              alt="Plumer"
+              style="width: 200px; height: 70px"
           /></a>
         </div>
         <div class="themeholy-mobile-menu">
           <ul>
             <li class="menu-item-has-children">
-              <a href="index.html">Home</a>
+              <a href="index.html">Hem</a>
             </li>
             <li class="menu-item-has-children">
-               <a href="service-details.html#">Services</a>
-               <ul class="sub-menu">
-                  <li><a href="#homeWash">Home Wash</a></li>
-                  <li><a href="#BasicCleaning">Basic Cleaning</a></li>
-                  <li><a href="#GlassCleaning">Glass Cleaning</a></li>
-                </ul>
+              <a href="service-details.html#">Grundläggande städning</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#HomeCleaning">Hemstädning</a>
+                </li>
+                <li>
+                  <a href="#OfficeCommercialCleaning"
+                    >Kontor / Kommersiell städning</a>
+                </li>
+                <li>
+                  <a href="#BuildingCleaning"
+                    >Byggstädning</a>
+                </li>
+              </ul>
             </li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="responsibilities.html">Responsibilities</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="menu-item-has-children">
+              <a href="maintenance-Cleaning.html">Underhållsrengöring</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="maintenance-Cleaning.html#FloorWashing"
+                    >Golvtvätt/vaxning/Höghastighetspolering</a>
+                </li>
+                <li>
+                  <a href="maintenance-Cleaning.html#DeepCleaning"
+                    >Djupstädning (hus/kontor)</a>
+                </li>
+                <li>
+                  <a href="maintenance-Cleaning.html#MattWashing"
+                    >Matt tvätt</a>
+                </li>
+                <li>
+                  <a href="maintenance-Cleaning.html#UpperDusting"
+                    >Övre damningg</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="about.html">Om oss</a>
+            </li>
+            <li><a href="responsibilities.html">Ansvar</a>
+            </li>
+            <li><a href="contact.html">Kontakt</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -141,7 +178,7 @@
           >
             <div class="col-auto d-none d-lg-block">
               <p class="header-notice">
-                Welcome to <span class="text-theme">Dust-off </span>Cleaning Services.
+                Välkommen till <span class="text-theme">Dust-off </span>Städtjänster.
               </p>
             </div>
             <div class="col-auto">
@@ -162,14 +199,14 @@
                     >
                   </li>
                   <li>
-                    <i class="fal fa-clock"></i>Work Time: Mon - Fri 09AM - 6PM
+                    <i class="fal fa-clock"></i>vi finns tillgängliga 24/7 till din tjänst.
                   </li>
                   <li>
                     <div class="social-links">
                       <a href="https://www.facebook.com/"
                         ><i class="fab fa-facebook-f"></i
                       ></a>
-                      
+
                       <a href="https://www.linkedin.com/"
                         ><i class="fab fa-linkedin-in"></i
                       ></a>
@@ -178,14 +215,58 @@
                       ></a>
                     </div>
                   </li>
-                  <li class="rrohid d-xxl-none d-inline-block position-relative">
+                  <li
+                    class="rrohid d-xxl-none d-inline-block position-relative"
+                  >
                     <button id="mobileLangBtn" onclick="langShowButton(this)">
-                      <img src="../assets/img/icon/language_icon.svg" alt="dd">
+                      <img
+                        src="../assets/img/icon/language_icon.svg"
+                        alt="dd"
+                      />
                     </button>
-                    <ul class="country-list d-none" style="right: 0px;width: 117px;color: black;overflow: hidden;">
-                      <li onclick="selectLang(this)" style="width: 100%;font-size: 15px; font-weight: 600; display: block;" class="activeLang">ENGLISH</li>
-                      <li onclick="selectLang(this)" style="width: 100%;font-size: 15px; font-weight: 600; display: block;">SUOMI</li>
-                      <li onclick="selectLang(this)" style="width: 100%;font-size: 15px; font-weight: 600; display: block;">SVENSKA</li>
+                    <ul
+                      class="country-list d-none"
+                      style="
+                        right: 0px;
+                        width: 117px;
+                        color: black;
+                        overflow: hidden;
+                      "
+                    >
+                      <li
+                        onclick="selectLang(this)"
+                        style="
+                          width: 100%;
+                          font-size: 15px;
+                          font-weight: 600;
+                          display: block;
+                        "
+                        class="activeLang"
+                      >
+                        ENGLISH
+                      </li>
+                      <li
+                        onclick="selectLang(this)"
+                        style="
+                          width: 100%;
+                          font-size: 15px;
+                          font-weight: 600;
+                          display: block;
+                        "
+                      >
+                        SUOMI
+                      </li>
+                      <li
+                        onclick="selectLang(this)"
+                        style="
+                          width: 100%;
+                          font-size: 15px;
+                          font-weight: 600;
+                          display: block;
+                        "
+                      >
+                        SVENSKA
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -198,10 +279,13 @@
         <div class="menu-area">
           <div class="container themeholy-container">
             <div class="row align-items-center justify-content-between">
-              <div class="col-auto">
+              <div class="col-auto d-xl-block d-lg-none d-sm-block">
                 <div class="header-logo">
                   <a href="index.html"
-                    ><img src="../assets/img/new_logo.svg" alt="Plumer" style="width: 200px; height: 70px"
+                    ><img
+                      src="../assets/img/new_logo.svg"
+                      alt="Plumer"
+                      style="width: 200px; height: 70px"
                   /></a>
                 </div>
               </div>
@@ -209,27 +293,56 @@
                 <nav class="main-menu d-none d-lg-inline-block">
                   <ul>
                     <li class="menu-item-has-children">
-                      <a href="index.html">Home</a>
-                      
+                      <a href="index.html">Hem</a>
+                    </li>
+
+                    <li class="menu-item-has-children">
+                      <a href="service-details.html#">Grundläggande städning</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="#HomeCleaning"
+                            >Hemstädning</a>
+                        </li>
+                        <li>
+                          <a href="#OfficeCommercialCleaning"
+                            >Kontor / Kommersiell städning</a>
+                        </li>
+                        <li>
+                          <a href="#BuildingCleaning"
+                            >Byggstädning</a>
+                        </li>
+                      </ul>
                     </li>
                     <li class="menu-item-has-children">
-                       <a href="service-details.html#">Services</a>
-                       <ul class="sub-menu">
-                        <li><a href="#homeWash">Home Wash</a></li>
-                        <li><a href="#BasicCleaning">Basic Cleaning</a></li>
-                        <li><a href="#GlassCleaning">Glass Cleaning</a></li>
+                      <a href="maintenance-Cleaning.html"
+                        >Underhållsrengöring</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="maintenance-Cleaning.html#FloorWashing"
+                            >Golvtvätt/vaxning/Höghastighetspolering</a>
+                        </li>
+                        <li>
+                          <a href="maintenance-Cleaning.html#DeepCleaning"
+                            >Djupstädning (hus/kontor)</a>
+                        </li>
+                        <li>
+                          <a href="maintenance-Cleaning.html#MattWashing"
+                            >Matt tvätt</a>
+                        </li>
+                        <li>
+                          <a href="maintenance-Cleaning.html#UpperDusting"
+                            >Övre damning</a>
+                        </li>
                       </ul>
+                    </li>
 
-                       <!-- <ul class="sub-menu d-none">
-                          <li><a href="service.html">Services</a></li>
-                          <li>
-                             <a href="service-details.html">Services Details</a>
-                           </li>
-                        </ul> -->
-                     </li>
-                     <li><a href="about.html">About Us</a></li>
-                     <li><a href="responsibilities.html">Responsibilities</a></li>
-                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">Om oss</a>
+                    </li>
+                    <li>
+                      <a href="responsibilities.html">Ansvar</a>
+                    </li>
+                    <li><a href="contact.html">Kontakt</a>
+                    </li>
                   </ul>
                 </nav>
                 <button
@@ -240,36 +353,42 @@
                 </button>
               </div>
               <div class="col-auto d-none d-xxl-block position-relative">
-
                 <button
-                        href=""
-                        class="themeholy-btn style4"
-                        id="showCountriesBtn"
-                        onclick="langShowButton(this)"
-                      >
-                        <span id="langBtnName">English</span>
-                        <img class="ms-2" src="../assets/img/icon/language_icon.svg" alt="lang" style="width: 25px;">
-                      </button>
-                      <ul class="country-list d-none countriesList" id="">
-                        <li onclick="selectLang(this)" class="activeLang">ENGLISH</li>
-                        <li onclick="selectLang(this)">SUOMI</li>
-                        <li onclick="selectLang(this)">SVENSKA</li>
-                      </ul>
-
+                  href=""
+                  class="themeholy-btn style4"
+                  id="showCountriesBtn"
+                  onclick="langShowButton(this)"
+                >
+                  <span id="langBtnName">English</span>
+                  <img
+                    class="ms-2"
+                    src="../assets/img/icon/language_icon.svg"
+                    alt="lang"
+                    style="width: 25px"
+                  />
+                </button>
+                <ul class="country-list d-none countriesList" id="">
+                  <li onclick="selectLang(this)" class="activeLang">ENGLISH</li>
+                  <li onclick="selectLang(this)">SUOMI</li>
+                  <li onclick="selectLang(this)">SVENSKA</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="logo-bg"></div>
+          <div class="logo-bg d-xl-block d-lg-none d-sm-block"></div>
         </div>
       </div>
     </header>
-    <div class="breadcumb-wrapper" data-bg-src="../assets/img/bg/breadcumb-bg.jpg">
+    <div
+      class="breadcumb-wrapper"
+      data-bg-src="../assets/img/bg/breadcumb-bg.jpg"
+    >
       <div class="container">
         <div class="breadcumb-content">
-          <h1 class="breadcumb-title">Omar Services Details 33</h1>
+          <h1 class="breadcumb-title">Tjänster detaljer</h1>
           <ul class="breadcumb-menu">
-            <li><a href="index.html">Home</a></li>
-            <li>Services Details</li>
+            <li><a href="index.html">Hem</a></li>
+            <li>Tjänster detaljer</li>
           </ul>
         </div>
       </div>
@@ -278,9 +397,9 @@
       <div class="container">
         <div class="row">
           <div class="col-xxl-8 col-lg-8">
-            <div class="page-single" id="homeWash">
+            <div class="page-single" id="HomeCleaning">
               <div class="page-img">
-               <h2 class="h3 page-title">Home Wash</h2>
+                <h2 class="h3 page-title">Hemstädning</h2>
                 <img
                   src="../assets/img/service/service_1_1.jpg"
                   alt="Service Image"
@@ -289,19 +408,10 @@
               <div class="page-content">
                 <!-- <h2 class="h3 page-title">Basement Plumbing</h2> -->
                 <p>
-                  Basement plumbing refers to the plumbing system installed in a
-                  basement, which includes the pipes, valves, and fixtures that
-                  supply water and remove waste. Basements are typically located
-                  below ground level, which can pose unique challenges for
-                  plumbing installation and maintenance.
+                  Förhöj ditt boende med våra professionella hemstädtjänster. Vårt engagerade team av experter använder avancerade rengöringstekniker för att säkerställa att varje skrymsle och vrår i ditt hem är fläckfritt. Från grundlig dammning till noggrann golvvård, vi levererar en orörd miljö skräddarsydd efter dina behov.
                 </p>
                 <p class="mb-30">
-                  Basement plumbing may include the installation of a sump pump
-                  to prevent flooding, as well as a sewage ejector pump to
-                  remove waste from basement plumbing fixtures such as toilets,
-                  sinks, and showers. Additionally, a basement may have a water
-                  heater, washing machine, or other water-using appliances that
-                  require plumbing connections.
+                  Upplev bekvämligheten med ett gnistrande rent hem utan att lyfta ett finger. Våra omfattande städpaket täcker kök, badrum, sovrum med mera. Med fokus på miljövänliga produkter och känsla för detaljer garanterar vi en hygienisk och inbjudande atmosfär som gör att du kan njuta av ditt hem till fullo.
                 </p>
                 <div class="row">
                   <div class="col-md-6 mb-30">
@@ -320,6 +430,129 @@
                   </div>
                 </div>
                 <p class="mb-4">
+                  Låt oss ta bort besväret med att hålla ett snyggt hem. Våra pålitliga och effektiva städtjänster är utformade för att passa din hektiska livsstil. Oavsett om det är en engångs djuprengöring eller ett återkommande schema, lita på att vi skapar ett sanerat och organiserat boende som återspeglar den komfort och det lugn du förtjänar.
+                </p>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="page-single" id="OfficeCommercialCleaning">
+              <div class="page-img">
+                <h2 class="h3 page-title">Kontors- eller kommersiell städning</h2>
+                <img
+                  src="../assets/img/service/service_2_1.jpg"
+                  alt="Service Image"
+                />
+              </div>
+              <div class="page-content">
+                <!-- <h2 class="h3 page-title">Basement Plumbing</h2> -->
+                <p>
+                  Förvandla ditt kontor till en ren och professionell arbetsyta med våra förstklassiga kommersiella städtjänster. Vårt skickliga team är engagerade i att skapa en miljö som främjar produktivitet och lämnar ett bestående intryck på kunderna. Från sanerade arbetsstationer till obefläckade gemensamma utrymmen, vi garanterar en fläckfri och välkomnande kontorsmiljö.
+                </p>
+                <p class="mb-30">
+                  Höj renhetsstandarden för ditt kommersiella utrymme med våra omfattande rengöringslösningar. Oavsett om du driver en livlig verksamhet, butik eller någon annan kommersiell anläggning, är vårt engagerade team utrustat för att hantera de unika städbehoven i ditt utrymme. Lita på att vi upprätthåller en hygienisk atmosfär som överensstämmer med ditt varumärkes image.
+                </p>
+                <div class="row">
+                  <div class="col-md-6 mb-30">
+                    <img
+                      class="w-100"
+                      src="../assets/img/service/service_2_2.jpg"
+                      alt="service"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-30">
+                    <img
+                      class="w-100"
+                      src="../assets/img/service/service_2_3.jpg"
+                      alt="service"
+                    />
+                  </div>
+                </div>
+                <p class="mb-4">
+                  Fokusera på det som är viktigast – att driva ditt företag – medan vi tar hand om städningen. Våra anpassningsbara kommersiella städtjänster tillgodoser olika utrymmen, vilket säkerställer en sanerad och organiserad miljö som främjar en positiv arbetsplatskultur. Med känsla för detaljer och effektivitet garanterar vi en polerad och inbjudande atmosfär för både anställda och kunder.
+                </p>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="page-single" id="BuildingCleaning">
+              <div class="page-img">
+                <h2 class="h3 page-title">Byggstädning</h2>
+                <img
+                  src="../assets/img/service/service_3_1.jpg"
+                  alt="Service Image"
+                />
+              </div>
+              <div class="page-content">
+                <!-- <h2 class="h3 page-title">Basement Plumbing</h2> -->
+                <p>
+                  Förhöj din byggnads estetiska tilltal och hygien med våra professionella städtjänster. Vårt expertteam specialiserar sig på exteriör och invändig rengöring och använder avancerade tekniker för att återställa skönheten i din struktur. Från höghusfönster till arkitektoniska fasader, vi levererar en helhetslösning för att hålla din byggnad på bästa sätt.
+                </p>
+                <p class="mb-30">
+                  Säkerställ livslängden på din byggnad genom att investera i våra skräddarsydda städtjänster. Vi förstår att varje struktur har unika rengöringskrav, och vårt erfarna team är utrustat för att hantera olika ytor och material. Med känsla för detaljer och ett engagemang för kvalitet förbättrar vi det övergripande underhållet och utseendet på din fastighet.
+                </p>
+                <div class="row">
+                  <div class="col-md-6 mb-30">
+                    <img
+                      class="w-100"
+                      src="../assets/img/service/service_3_2.jpg"
+                      alt="service"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-30">
+                    <img
+                      class="w-100"
+                      src="../assets/img/service/service_3_3.jpg"
+                      alt="service"
+                    />
+                  </div>
+                </div>
+                <p class="mb-4">
+                  Upplev bekvämligheten med en välskött och fläckfri byggnad utan krångel. Våra byggnadsstädtjänster erbjuder en rad alternativ, inklusive planerat underhåll och engångs djuprengöring. Lita på att vi skapar ett bestående första intryck för dina besökare samtidigt som den strukturella integriteten hos din byggnad bevaras.
+                </p>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="page-single" id="OzonationDeodorization">
+              <div class="page-img">
+                <h2 class="h3 page-title">Ozonisering och deodorisering</h2>
+                <!-- <img
+                  src="../assets/img/service/service_3_1.jpg"
+                  alt="Service Image"
+                /> -->
+              </div>
+              <div class="page-content">
+                <!-- <h2 class="h3 page-title">Basement Plumbing</h2> -->
+                <p>
+                  Finns det någon dålig lukt i ditt hus eller i din bil eller i lägenheten.
+Vi är här för att hjälpa dig att bli av med det. Genom oxidation kan du få frisk och frisk luft att andas.
+                </p>
+                <p class="mb-30">
+                  Denna luftbehandling hjälper till att ta bort alla oönskade lukter och allergener
+permanent. Det är mycket effektivt på lukten av djur, tobak samt
+mustighet.
+                </p>
+                <!-- <div class="row">
+                  <div class="col-md-6 mb-30">
+                    <img
+                      class="w-100"
+                      src="../assets/img/service/service_3_2.jpg"
+                      alt="service"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-30">
+                    <img
+                      class="w-100"
+                      src="../assets/img/service/service_3_3.jpg"
+                      alt="service"
+                    />
+                  </div>
+                </div> -->
+                <!-- <p class="mb-4">
                   Common issues with basement plumbing can include leaks, clogs,
                   and backups, which can cause water damage and health hazards
                   if not addressed promptly. To prevent these issues, it's
@@ -327,248 +560,30 @@
                   by cleaning your drains regularly, checking for leaks, and
                   repairing any damage or malfunctions as soon as they are
                   detected.
-                </p>
-                <h3 class="h4 mb-20 d-none">
-                  Our Commercial Plumbing is always guaranteed.
-                </h3>
-                <p class="mb-4 d-none">
-                  If you're experiencing plumbing issues in your basement, it's
-                  best to call a licensed plumber to assess the situation and
-                  make any necessary repairs. A professional plumber can help
-                  you identify the cause of the problem and ensure that your
-                  basement plumbing system is functioning properly and safely.
-                </p>
-                <div class="row mb-20 d-none">
-                  <div class="col-md-6 mb-10">
-                    <div class="checklist">
-                      <ul>
-                        <li>
-                          <i class="fas fa-badge-check"></i> We provide the most
-                          reasonable cost.
-                        </li>
-                        <li>
-                          <i class="fas fa-badge-check"></i> Finish work before
-                          Deadline.
-                        </li>
-                        <li>
-                          <i class="fas fa-badge-check"></i> The certified
-                          materials in a timely.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-10">
-                    <div class="checklist">
-                      <ul>
-                        <li>
-                          <i class="fas fa-badge-check"></i> Dedicated and
-                          skilled professionals
-                        </li>
-                        <li>
-                          <i class="fas fa-badge-check"></i> Offering all jobs
-                          guaranteed & neatly done
-                        </li>
-                        <li>
-                          <i class="fas fa-badge-check"></i> We provide 24/7 on
-                          time services
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="service-feature-wrap d-none" id="findIt">
-                  <div class="service-feature">
-                    <div class="service-feature_icon">
-                      <img
-                        src="../assets/img/icon/service_feature_1.svg"
-                        alt="icon"
-                      />
-                    </div>
-                    <div class="media-body">
-                      <h4 class="service-feature_title">Installation</h4>
-                      <p class="service-feature_text">
-                        Interactively predominate out-of the box best practices.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="service-feature">
-                    <div class="service-feature_icon">
-                      <img
-                        src="../assets/img/icon/service_feature_2.svg"
-                        alt="icon"
-                      />
-                    </div>
-                    <div class="media-body">
-                      <h4 class="service-feature_title">Cleaning</h4>
-                      <p class="service-feature_text">
-                        Interactively predominate out-of the box best practices.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="service-feature">
-                    <div class="service-feature_icon">
-                      <img
-                        src="../assets/img/icon/service_feature_3.svg"
-                        alt="icon"
-                      />
-                    </div>
-                    <div class="media-body">
-                      <h4 class="service-feature_title">Replacing</h4>
-                      <p class="service-feature_text">
-                        Interactively predominate out-of the box best practices.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="service-feature">
-                    <div class="service-feature_icon">
-                      <img
-                        src="../assets/img/icon/service_feature_4.svg"
-                        alt="icon"
-                      />
-                    </div>
-                    <div class="media-body">
-                      <h4 class="service-feature_title">Repairing</h4>
-                      <p class="service-feature_text">
-                        Interactively predominate out-of the box best practices.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                </p> -->
               </div>
             </div>
-
-            <hr>
-
-            <div class="page-single" id="BasicCleaning">
-               <div class="page-img">
-                <h2 class="h3 page-title">Basic Cleaning</h2>
-                 <img
-                   src="../assets/img/service/service_2_1.jpg"
-                   alt="Service Image"
-                 />
-               </div>
-               <div class="page-content">
-                 <!-- <h2 class="h3 page-title">Basement Plumbing</h2> -->
-                 <p>
-                   Basement plumbing refers to the plumbing system installed in a
-                   basement, which includes the pipes, valves, and fixtures that
-                   supply water and remove waste. Basements are typically located
-                   below ground level, which can pose unique challenges for
-                   plumbing installation and maintenance.
-                 </p>
-                 <p class="mb-30">
-                   Basement plumbing may include the installation of a sump pump
-                   to prevent flooding, as well as a sewage ejector pump to
-                   remove waste from basement plumbing fixtures such as toilets,
-                   sinks, and showers. Additionally, a basement may have a water
-                   heater, washing machine, or other water-using appliances that
-                   require plumbing connections.
-                 </p>
-                 <div class="row">
-                   <div class="col-md-6 mb-30">
-                     <img
-                       class="w-100"
-                       src="../assets/img/service/service_2_2.jpg"
-                       alt="service"
-                     />
-                   </div>
-                   <div class="col-md-6 mb-30">
-                     <img
-                       class="w-100"
-                       src="../assets/img/service/service_2_3.jpg"
-                       alt="service"
-                     />
-                   </div>
-                 </div>
-                 <p class="mb-4">
-                   Common issues with basement plumbing can include leaks, clogs,
-                   and backups, which can cause water damage and health hazards
-                   if not addressed promptly. To prevent these issues, it's
-                   important to properly maintain your basement plumbing system
-                   by cleaning your drains regularly, checking for leaks, and
-                   repairing any damage or malfunctions as soon as they are
-                   detected.
-                 </p>
-
-               </div>
-             </div>
-
-             <hr>
-
-             <div class="page-single" id="GlassCleaning">
-               <div class="page-img">
-                <h2 class="h3 page-title">Glass Cleaning</h2>
-                 <img
-                   src="../assets/img/service/service_3_1.jpg"
-                   alt="Service Image"
-                 />
-               </div>
-               <div class="page-content">
-                 <!-- <h2 class="h3 page-title">Basement Plumbing</h2> -->
-                 <p>
-                   Basement plumbing refers to the plumbing system installed in a
-                   basement, which includes the pipes, valves, and fixtures that
-                   supply water and remove waste. Basements are typically located
-                   below ground level, which can pose unique challenges for
-                   plumbing installation and maintenance.
-                 </p>
-                 <p class="mb-30">
-                   Basement plumbing may include the installation of a sump pump
-                   to prevent flooding, as well as a sewage ejector pump to
-                   remove waste from basement plumbing fixtures such as toilets,
-                   sinks, and showers. Additionally, a basement may have a water
-                   heater, washing machine, or other water-using appliances that
-                   require plumbing connections.
-                 </p>
-                 <div class="row">
-                   <div class="col-md-6 mb-30">
-                     <img
-                       class="w-100"
-                       src="../assets/img/service/service_3_2.jpg"
-                       alt="service"
-                     />
-                   </div>
-                   <div class="col-md-6 mb-30">
-                     <img
-                       class="w-100"
-                       src="../assets/img/service/service_3_3.jpg"
-                       alt="service"
-                     />
-                   </div>
-                 </div>
-                 <p class="mb-4">
-                   Common issues with basement plumbing can include leaks, clogs,
-                   and backups, which can cause water damage and health hazards
-                   if not addressed promptly. To prevent these issues, it's
-                   important to properly maintain your basement plumbing system
-                   by cleaning your drains regularly, checking for leaks, and
-                   repairing any damage or malfunctions as soon as they are
-                   detected.
-                 </p>
-
-               </div>
-             </div>
           </div>
           <div class="col-xxl-4 col-lg-4 EmergencyCall">
             <aside class="sidebar-area">
-              
               <div
                 class="widget widget_call"
                 data-bg-src="../assets/img/bg/widget_bg_1.jpg"
               >
                 <div class="widget-call">
-                  <h4 class="box-title">Emergency Cleaning?</h4>
+                  <h4 class="box-title">Akutstädning?</h4>
                   <div class="play-btn"><i class="fa-solid fa-phone"></i></div>
                   <a
                     href="https://themeholy.com/html/plumer/demo/+16326543654"
                     class="call"
-                    > +358 40 626 5614</a
+                  >
+                    +358 40 626 5614</a
                   >
                   <p class="text">
-                     Contact the Cleaner or Cleaning company to schedule a service call. Be prepared to provide help about the Cleaning.
+                    Kontakta Städaren eller Städföretaget för att boka ett servicesamtal. Var beredd att ge hjälp med städningen.
                   </p>
                   <a href="contact.html" class="themeholy-btn style3"
-                    >Get a Quote</a
+                    >Få ett citat</a
                   >
                 </div>
               </div>
@@ -577,6 +592,7 @@
         </div>
       </div>
     </section>
+
     <footer class="footer-wrapper footer-layout1">
       <div class="widget-area">
         <div class="container">
@@ -585,73 +601,71 @@
               <div class="widget footer-widget">
                 <div class="about-logo">
                   <a href="index.html"
-                    ><img src="../assets/img/logo-small.svg" alt="Plumer" style="width: 150px;height: 54px;"
+                    ><img
+                      src="../assets/img/logo-small.svg"
+                      alt="Plumer"
+                      style="width: 150px; height: 54px"
                   /></a>
                 </div>
                 <div class="themeholy-widget-schedule">
                   <p class="text">
-                    Expert residential and small business cleaning for tailored solutions. Reliable, timely, hassle-free service for a sparkling environment
+                    Expert städning av bostäder och småföretag för skräddarsydda lösningar. Pålitlig, snabb och problemfri service för en glittrande miljö.
                   </p>
-                  <h4 class="title">Working Hours:</h4>
-                  <p class="text">
-                    we are available 24/7 at your service.
-                  </p>
+                  <h4 class="title">Arbetstimmar:</h4>
+                  <p class="text">vi finns tillgängliga 24/7 till din tjänst.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-xl-auto">
-               <div class="widget widget_nav_menu footer-widget">
-                  <h3 class="widget_title">Quick Links</h3>
-                  <div class="menu-all-pages-container">
-                    <ul class="menu">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="service-details.html">Services</a></li>
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="responsibilities.html">Responsibilities</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                  </div>
+              <div class="widget widget_nav_menu footer-widget">
+                <h3 class="widget_title">snabblänkar</h3>
+                <div class="menu-all-pages-container">
+                  <ul class="menu">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="service-details.html">Tjänster</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    <li>
+                      <a href="responsibilities.html">Ansvar</a>
+                    </li>
+                    <li><a href="contact.html">Kontakta oss</a></li>
+                  </ul>
                 </div>
+              </div>
             </div>
             <div class="col-md-6 col-xl-auto">
-               <div class="widget footer-widget">
-                  <h3 class="widget_title">Contact Us</h3>
-                  <div class="themeholy-widget-contact">
-                    <div class="info-box">
-                      <div class="info-box_icon">
-                        <i class="fas fa-location-dot"></i>
-                      </div>
-                      <p class="info-box_text">
-                        vieraskuja 5, 02770, Espoo, Finland.
-                      </p>
+              <div class="widget footer-widget">
+                <h3 class="widget_title">Kontakta oss</h3>
+                <div class="themeholy-widget-contact">
+                  <div class="info-box">
+                    <div class="info-box_icon">
+                      <i class="fas fa-location-dot"></i>
                     </div>
-                    <div class="info-box">
-                      <div class="info-box_icon">
-                        <i class="fas fa-phone"></i>
-                      </div>
-                      <p class="info-box_text">
-                        <a href="tel:+16326543564" class="info-box_link"
-                          >+358 40 626 5614</a
-                        >
-                        <!-- <a href="tel:+16326545432" class="info-box_link"
-                          >+358 40 626 5614</a
-                        > -->
-                      </p>
+                    <p class="info-box_text">
+                      vieraskuja 5, 02770, Espoo, Finland.
+                    </p>
+                  </div>
+                  <div class="info-box">
+                    <div class="info-box_icon">
+                      <i class="fas fa-phone"></i>
                     </div>
-                    <div class="info-box">
-                      <div class="info-box_icon">
-                        <i class="fas fa-envelope"></i>
-                      </div>
-                      <p class="info-box_text">
-                        <a
-                          href="mailto:help24/7@plumer.com"
-                          class="info-box_link"
-                          >onnea20@gamil.com</a
-                        >
-                      </p>
+                    <p class="info-box_text">
+                      <a href="tel:+16326543564" class="info-box_link"
+                        >+358 40 626 5614</a
+                      >
+                    </p>
+                  </div>
+                  <div class="info-box">
+                    <div class="info-box_icon">
+                      <i class="fas fa-envelope"></i>
                     </div>
+                    <p class="info-box_text">
+                      <a href="mailto:help24/7@plumer.com" class="info-box_link"
+                        >onnea20@gamil.com</a
+                      >
+                    </p>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -661,9 +675,8 @@
           <div class="row justify-content-between align-items-center">
             <div class="col-lg-6">
               <p class="copyright-text">
-                Copyright <i class="fal fa-copyright"></i> 2023
-                <a href="index.html">Dust-of Cleaning</a>. All Rights
-                Reserved.
+                upphovsrätt <i class="fal fa-copyright"></i> 2024
+                <a href="index.html">Dust-of Cleaning</a> Alla rättigheter förbehållna.
               </p>
             </div>
             <div class="col-lg-auto text-end d-none d-lg-block">
@@ -692,9 +705,10 @@
         <img src="../assets/img/shape/footer_shape_1.png" alt="shape" />
       </div>
       <div class="shape-mockup" data-bottom="0%" data-right="0%">
-        <img src="../assets/img/shape/footer_shape_2.png" alt="shape" />
+        <img src="../assets/img/shape/footer_shape_2.png" alt="shape" style="width: 582px; height: 370px; opacity: .2;" />
       </div>
     </footer>
+    
     <div class="scroll-top">
       <svg
         class="progress-circle svg-content"
