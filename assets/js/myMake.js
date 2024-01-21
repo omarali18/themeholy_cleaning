@@ -25,61 +25,77 @@ const langShowButton = (tag) =>{
 // });
 
 
-// const selectLang = (tag, event) =>{
-//    var currentURL = window.location.href;
-//    var filename = currentURL.split("/").pop(); 
-//    let newURL;
-   
-//    if (tag.innerText == 'ENGLISH') {
-//       newURL = `http://127.0.0.1:5500/english/${filename}`
-//    }
-//    else if(tag.innerText == 'SUOMI'){
-//       newURL = `http://127.0.0.1:5500/suomi/${filename}`
-//    }
-//    else if(tag.innerText == 'SVENSKA'){
-//       newURL = `http://127.0.0.1:5500/svenska/${filename}`
-//    }
-//    window.location.href = newURL;
-//    tag.parentNode.classList.add('d-none');
-// }
-
 const selectLang = (tag, event) =>{
    var currentURL = window.location.href;
    var filename = currentURL.split("/").pop(); 
    let newURL;
    
    if (tag.innerText == 'ENGLISH') {
-      newURL = `https://omarali18.github.io/themeholy_cleaning/english/${filename}`
+      newURL = `http://127.0.0.1:5500/english/${filename}`
    }
    else if(tag.innerText == 'SUOMI'){
-      newURL = `https://omarali18.github.io/themeholy_cleaning/suomi/${filename}`
+      newURL = `http://127.0.0.1:5500/suomi/${filename}`
    }
    else if(tag.innerText == 'SVENSKA'){
-      newURL = `https://omarali18.github.io/themeholy_cleaning/svenska/${filename}`
+      newURL = `http://127.0.0.1:5500/svenska/${filename}`
    }
    window.location.href = newURL;
    tag.parentNode.classList.add('d-none');
 }
 
+// const selectLang = (tag, event) =>{
+//    var currentURL = window.location.href;
+//    var filename = currentURL.split("/").pop(); 
+//    let newURL;
+   
+//    if (tag.innerText == 'ENGLISH') {
+//       newURL = `https://omarali18.github.io/themeholy_cleaning/english/${filename}`
+//    }
+//    else if(tag.innerText == 'SUOMI'){
+//       newURL = `https://omarali18.github.io/themeholy_cleaning/suomi/${filename}`
+//    }
+//    else if(tag.innerText == 'SVENSKA'){
+//       newURL = `https://omarali18.github.io/themeholy_cleaning/svenska/${filename}`
+//    }
+//    window.location.href = newURL;
+//    tag.parentNode.classList.add('d-none');
+// }
+
 
 
 window.onload = function() {
+   console.log("omar ali");
    var currentURL = window.location.href;
-   let countryparent = document.querySelectorAll(".country-list")
-   for (let i = 0; i < countryparent.length; i++) {
-      let listParent = countryparent[i].querySelectorAll('li')
-      listParent.forEach(li =>{
-         // if (li.innerText == "SUOMI") {
-         if (currentURL.includes(li.innerText.toLowerCase())) {
-            langBtnName.textContent = li.innerText;
-            li.classList.add("activeLang");
-         }
-         else{
-            li.classList.remove("activeLang")
-         }
-      })
-      
+   let countryparent = document.querySelectorAll(".country-list li")
+
+   for (let i = 0; i < countryparent.length; i++){
+      console.log(countryparent[i]);
+      if (currentURL.includes(countryparent[i].innerText.toLowerCase())){
+         console.log("li.innerText.toLowerCase() ==", countryparent[i].innerText.toLowerCase());
+         langBtnName.textContent = countryparent[i].innerText;
+         countryparent[i].classList.add("activeLang");
+      }
+      else{
+         countryparent[i].classList.remove("activeLang")
+      }
    }
+
+   // for (let i = 0; i < countryparent.length; i++) {
+   //    let listParent = countryparent[i].querySelectorAll('li')
+   //    listParent.forEach(li =>{
+   //       console.log("li.innerText.toLowerCase() ==", li);
+   //       // if (li.innerText == "SUOMI") {
+   //          if (currentURL.includes(li.innerText.toLowerCase())) {
+   //             langBtnName.textContent = li.innerText;
+   //             console.log("li.innerText.toLowerCase() ==", li.innerText.toLowerCase());
+   //          li.classList.add("activeLang");
+   //       }
+   //       else{
+   //          li.classList.remove("activeLang")
+   //       }
+   //    })
+   // }
+
  };
 
  const sendBtn = document.getElementById('sendBtn');
