@@ -102,6 +102,11 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/myStyle.css" />
 
+
+
+    <!-- <script src="https://static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.13.0/cloudinary.min.js"></script> -->
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -252,6 +257,7 @@
                           font-weight: 600;
                           display: block;
                         "
+                        class=""
                       >SUOMI</li>
                       <li
                         onclick="selectLang(this)"
@@ -261,6 +267,7 @@
                           font-weight: 600;
                           display: block;
                         "
+                        class=""
                       >SVENSKA</li>
                     </ul>
                   </li>
@@ -873,7 +880,7 @@
               <div class="service-card_content">
                 <div class="shape1"></div>
                 <h3 class="box-title">
-                  <a href="service-details.html#OzonationDeodorization"
+                  <a href="#OzonationDeodorization"
                     >Ozonation and deodorization</a
                   >
                 </h3>
@@ -883,7 +890,7 @@
                   oxidation you can get fresh and healthy air to breath.
                 </p>
                 <a
-                  href="service-details.html#OzonationDeodorization"
+                  href="#OzonationDeodorization"
                   class="themeholy-btn"
                   >Read More</a
                 >
@@ -1013,7 +1020,7 @@
         <!-- action="https://formspree.io/f/xeqyorer" -->
         <!-- class="appoitment-form1" required  4424B0C3F273F62C39055521CA96C42FF7F6 -->
 
-        <form method="POST" class="appoitment-form1" id="myContactForm">
+        <form method="POST" action="../assets/js/upload.php" class="appoitment-form1" id="myContactForm">
           <p class="mb-0 mt-3 text-danger" id="error_message"></p>
           <p class="mb-0 mt-3 text-success" id="success_message"></p>
           <div class="row gap-sm-3 gap-md-0 gap-3">
@@ -1057,10 +1064,6 @@
                 required
               />
             </div>
-            <div>
-              <label for="attachment">Attachment:</label>
-              <input type="file" id="attachment" name="attachment" accept="image/*">
-            </div>
 
             <div
               class="col-md-4 mt-md-3 d-flex align-items-end justify-content-center"
@@ -1077,6 +1080,7 @@
             </div>
           </div>
         </form>
+        
       </div>
     </div>
     <div class="overflow-hidden space">
@@ -1534,6 +1538,78 @@
     </div>
 
     <section
+      class=" overflow-hidden"
+      id="OzonationDeodorization"
+    >
+      <div class="container space" style="padding-top: 35px;">
+        <div class="title-area text-center">
+          <span class="sub-title">
+            <!-- <img src="../assets/img/theme-img/title_shape_1.svg" alt="shape" />HOW IT’S WORK</span -->
+            _____ &nbsp; &nbsp; Odor-Free Air &nbsp; &nbsp;
+            _____</span
+          >
+          <h2 class="sec-title">Ozonation and deodorization</h2>
+        </div>
+        <div class="process-card-area">
+          <div class="row gx-0 gy-40 justify-content-center">
+            <div class="col-lg-8 col-xl-6 process-card-wrap">
+              <div class="process-card">
+                <p class="">
+                  Is there any bad smell in your house or in your car or in the apartment. We are here to help you to get rid from it. By oxidation you can get fresh and healthy air to breath.
+                </p>
+                <p>This air treatment helps to remove any unwanted odors and allergens permanently. It is very effective on smell of animals, tobacco as well as mustiness.</p>
+              </div>
+            </div>
+            <!-- <div class="col-md-6 col-xl-4 process-card-wrap">
+              <div class="process-card">
+                <div class="process-card_img">
+                  <img
+                    src="../assets/img/normal/process_card_2.jpg"
+                    alt="Image"
+                  />
+                  <div class="process-card_icon">
+                    <img
+                      src="../assets/img/icon/process_card_2.svg"
+                      alt="icon"
+                      style="width: 50px"
+                    />
+                  </div>
+                </div>
+                <h2 class="box-title">Information Acquisition</h2>
+                <p class="process-card_text">
+                  After receiving your details, we'll promptly ensure and
+                  finalize your requested services for a hassle-free experience.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4 process-card-wrap">
+              <div class="process-card">
+                <div class="process-card_img">
+                  <img
+                    src="../assets/img/normal/process_card_3.jpg"
+                    alt="Image"
+                  />
+                  <div class="process-card_icon">
+                    <img
+                      src="../assets/img/icon/process_card_3.svg"
+                      alt="icon"
+                      style="width: 50px"
+                    />
+                  </div>
+                </div>
+                <h2 class="box-title">Project Implementation</h2>
+                <p class="process-card_text">
+                  After confirming your details, our team will expertly
+                  implement your project, ensuring a successful outcome.
+                </p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
       class="process-sec1 bg-smoke overflow-hidden"
       id="process-sec"
       data-bg-src="../assets/img/bg/process_bg_1.jpg"
@@ -1542,7 +1618,7 @@
         <div class="title-area text-center">
           <span class="sub-title">
             <!-- <img src="../assets/img/theme-img/title_shape_1.svg" alt="shape" />HOW IT’S WORK</span -->
-            _____ &nbsp; &nbsp; &nbsp; HOW IT’S WORK &nbsp; &nbsp; &nbsp;
+            _____ &nbsp; &nbsp; HOW IT’S WORK &nbsp; &nbsp;
             _____</span
           >
           <h2 class="sec-title">Our Standard Working Process</h2>
