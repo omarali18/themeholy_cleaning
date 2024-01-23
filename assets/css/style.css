@@ -3751,7 +3751,7 @@ ol.wp-block-rss {
 .footer-widget.widget_archive a:before,
 .footer-widget.widget_categories a:before,
 .footer-widget.widget_nav_menu a:before {
-    content: "\f061";
+    content: "\2192";
     font-weight: 600;
     left: 0;
     top: 2px;
@@ -5111,7 +5111,8 @@ ol.wp-block-rss {
     position: relative;
 }
 .breadcumb-menu li:after {
-    content: "\f054";
+    /* content: "\f054"; */
+    content: "\226B";
     position: relative;
     margin-left: 10px;
     font-weight: 500;
