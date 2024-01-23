@@ -1479,7 +1479,8 @@ textarea.is-invalid {
     transition: all 300ms linear;
 }
 .scroll-top:after {
-    content: "\f062";
+    /* content: "\f062";*/
+    content: "\1F4E4";
     font-family: var(--icon-font);
     position: absolute;
     text-align: center;
